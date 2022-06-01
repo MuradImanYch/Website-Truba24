@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портал металлопроката : продажа-покупка проката, трубы, арматуры, метизов на Труба24.ру</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/private-ads.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/price-list.css">
+  <link rel="stylesheet" href="styles/application.css">
+  <link rel="stylesheet" href="styles/catalog-price.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="auth">
+    <div id="authWrap">
+        <img src="assets/img/auth.png" alt="auth">
+        <img src="assets/img/authImg.png" alt="authImg">
+        <p>АВТОРИЗАЦИЯ</p>
+        <input type="text" placeholder="E-mail" />
+        <input type="password" placeholder="Пароль" />
+        <button>ВОЙТИ</button>
+        <div class="rememberForget">
+            <div>
+                <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+            </div>
+            <a href="#">Забыли пароль</a>
+        </div>
+    </div>
+</div>
+  <header>
+    <div class="container">
+      <div class="logoWrapBars price-list">
+        <div class="logoText">
+          <img src="assets/ico/logo.png" alt="logo">
+          <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+        </div>
+        <div class="barsWrap">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="btnWrap">
+        <button>ВОЙТИ</button>
+        <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+        <ul>
+            <li>
+                <div>
+                    <a href="catalog.html">Каталог компаний</a>
+                    <div>▼</div>
+                </div>
+                <ul class="catalogSubMenu">
+                    <li><a href="#">ГЛАВНАЯ — </a></li>
+                    <li><a href="#">АНАЛИТИКА —</a></li>
+                    <li><a href="#">НОВОСТИ КОМПАНИЙ —</a></li>
+                    <li><a href="#">НАЗВАНИЕ СТАТЬИ</a></li>
+                </ul>
+            </li>
+            <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+            <li><a href="application.html">Заявки</a></li>
+            <li><a href="private-ads.html">Частные объявления</a></li>
+            <li><a href="analytics.html">Аналитика</a></li>
+        </ul>
+    </div>
+</nav>
+  <section id="introduction">
+    <div class="container">
+      <div class="introduction-application-wrap">
+        <div class="application-wrap-col">
+          <div class="application-left">
+            <div class="application-title private-ads">
+              <h1>ПРАЙС-ЛИСТЫ ПОСТАВЩИКОВ  НА ПРОДАЖУ МЕТАЛЛОПРОКАТА   РОССИИ</h1>
+            </div>
+          </div>
+          <div class="application-right">
+            <img src="assets/img_application/main.png" title="application-img">
+          </div>
+        </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="application-section" id="products">
+    <div class="container">
+      <div class="list">
+        <ul>
+          <li>
+            <img src="assets/img/main3.png" alt="main3">
+            <a href="#">Трубы</a>
+          </li>
+          <li>
+            <a href="#">Запорная арматура</a>
+          </li>
+          <li>
+            <img src="assets/img/main5.png" alt="main5">
+            <a href="#">Сортовой и фасонный прокат</a>
+          </li>
+          <li>
+            <a href="#">Листовой прокат</a>
+          </li>
+          <li>
+            <img src="assets/img/main7.png" alt="main7">
+            <a href="#">Цветные металлы</a>
+          </li>
+          <li>
+            <a href="#">Метизы и крепеж</a>
+          </li>
+          <li>
+            <img src="assets/img/main9.png" alt="main9">
+            <a href="#">Лом, отходы, сырье</a>
+          </li>
+          <li>
+            <a href="#">Прочая металло-продукция</a>
+          </li>
+          <li>
+            <img src="assets/img/main11.png" alt="main11">
+            <a href="#">Ободурование и инструмент</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+        </ul>
+      </div>
+      <div class="price-list-btn">
+        <button><a class="popup-open" href="#">Добавить свой товар</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="application-search">
+        <input placeholder="Введите название товара" type="text">
+      </div>
+    </div>
+  </section>
+
+  <div class="catalog-menu-product-wrap price-list">
+    <div class="catalog-menu-product">
+      <div class="product-card premium">
+        <div class="product-card-logo"><img src="assets/img_catalog/product-card-logo.png" alt="card-logo"></div>
+        <div class="product-card-description">
+          <p>Продажа Труба новая ГОСТ 8732</p>
+          <span>134000₽ за тн.</span>
+          <div class="card-deskription-item prise-list">
+            <span>05 июля, 2015</span>
+            <span>257</span>
+            <span>Размер: 325х8</span>
+          </div>
+        </div>
+        <div class="manufacturer-name-wrap">
+          <div class="manufacturer-title">
+            <span>ООО “ТРУБАСЕЙЛ” </span>
+          </div>
+          <div class="manufacturer-description price-list">
+            <span>Вне сети</span>
+            <span>Москва</span>
+              <span class="manufacturer-description-tel"><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+          </div>
+        </div>
+        <div class="product-card-btn price-list">
+          <div class="favorites-btn-wrap">
+            <button>ИЗБРАННОЕ</button>
+            <button>КУПИТЬ</button>
+          </div>
+          <div class="card-request-call price-list">
+            <button>ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-card-logo"><img src="assets/img_catalog/product-card-logo1.png" alt="card-logo"></div>
+
+        <div class="product-card-description">
+          <p>Продажа Труба новая ГОСТ 8732</p>
+          <span>134000₽ за тн.</span>
+          <div class="card-deskription-item prise-list">
+            <span>05 июля, 2015</span>
+            <span>257</span>
+            <span>Размер: 325х8</span>
+          </div>
+        </div>
+        <div class="manufacturer-name-wrap">
+          <div class="manufacturer-title">
+            <span>ООО “ТРУБАСЕЙЛ” </span>
+          </div>
+          <div class="manufacturer-description price-list">
+            <span>Вне сети</span>
+            <span>Москва</span>
+            <span class="manufacturer-description-tel"><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+          </div>
+        </div>
+        <div class="product-card-btn price-list">
+          <div class="favorites-btn-wrap">
+            <button>ИЗБРАННОЕ</button>
+            <button>КУПИТЬ</button>
+          </div>
+          <div class="card-request-call price-list">
+            <button>ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-card-logo"><img src="assets/img_catalog/product-card-logo1.png" alt="card-logo"></div>
+
+        <div class="product-card-description">
+          <p>Продажа Труба новая ГОСТ 8732</p>
+          <span>134000₽ за тн.</span>
+          <div class="card-deskription-item prise-list">
+            <span>05 июля, 2015</span>
+            <span>257</span>
+            <span>Размер: 325х8</span>
+          </div>
+        </div>
+        <div class="manufacturer-name-wrap">
+          <div class="manufacturer-title">
+            <span>ООО “ТРУБАСЕЙЛ” </span>
+          </div>
+          <div class="manufacturer-description price-list">
+            <span>Вне сети</span>
+            <span>Москва</span>
+            <span class="manufacturer-description-tel"><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+          </div>
+        </div>
+        <div class="product-card-btn price-list">
+          <div class="favorites-btn-wrap">
+            <button>ИЗБРАННОЕ</button>
+            <button>КУПИТЬ</button>
+          </div>
+          <div class="card-request-call price-list">
+            <button>ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+
+        <div class="product-card-logo"><img src="assets/img_catalog/product-card-logo1.png" alt="card-logo"></div>
+
+        <div class="product-card-description">
+          <p>Продажа Труба новая ГОСТ 8732</p>
+          <span>134000₽ за тн.</span>
+          <div class="card-deskription-item prise-list">
+            <span>05 июля, 2015</span>
+            <span>257</span>
+            <span>Размер: 325х8</span>
+          </div>
+        </div>
+        <div class="manufacturer-name-wrap">
+          <div class="manufacturer-title">
+            <span>ООО “ТРУБАСЕЙЛ” </span>
+          </div>
+          <div class="manufacturer-description price-list">
+            <span>Вне сети</span>
+            <span>Москва</span>
+              <span class="manufacturer-description-tel"><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+          </div>
+        </div>
+        <div class="product-card-btn price-list">
+          <div class="favorites-btn-wrap">
+            <button>ИЗБРАННОЕ</button>
+            <button>КУПИТЬ</button>
+          </div>
+         <div class="card-request-call price-list">
+            <button>ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card premium">
+
+        <div class="product-card-logo"><img src="assets/img_catalog/product-card-logo.png" alt="card-logo"></div>
+
+        <div class="product-card-description">
+          <p>Продажа Труба новая ГОСТ 8732</p>
+          <span>134000₽ за тн.</span>
+          <div class="card-deskription-item prise-list">
+            <span>05 июля, 2015</span>
+            <span>257</span>
+            <span>Размер: 325х8</span>
+          </div>
+        </div>
+        <div class="manufacturer-name-wrap">
+          <div class="manufacturer-title">
+            <span>ООО “ТРУБАСЕЙЛ” </span>
+          </div>
+          <div class="manufacturer-description price-list">
+            <span>Вне сети</span>
+            <span>Москва</span>
+              <span class="manufacturer-description-tel"><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+          </div>
+        </div>
+        <div class="product-card-btn price-list">
+          <div class="favorites-btn-wrap">
+            <button>ИЗБРАННОЕ</button>
+            <button>КУПИТЬ</button>
+          </div>
+          <div class="card-request-call price-list">
+            <button>ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-ad-wrap price-list">
+      <span>МЕСТО ДЛЯ ОБЪЯВЛЕНИЯ</span>
+    </div>
+ </div>
+    <section>
+      <div class="container">
+        <div class="sale-application">
+          <div class="sale-application-title price-list">
+            <span>Прайс-листы поставщиков о продаже металлопроката</span>
+          </div>
+          <div class="sale-application-text price-list">
+            <div class="sale-application-text-left price-list">
+              <p>В данном разделе вы можете<span> разместить заявки на покупку металлопроката оптом и в розницу в различных городах России.</span></p>
+              <p>Для того, чтобы разместить свою заявку, Вам необходимо авторизоваться. <span>Если Вы еще не зарегистрированы, то зарегистрируйтесь</span></p>
+            </div>
+            <div class="sale-application-text-rigt">
+              <div class="sale-application-rigt-img">
+                <img src="assets/img_application/sale-application-rigt-img.svg">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div>
+          <div class="logoText">
+            <img src="assets/ico/logoFooter.jpg" alt="logoFooter">
+            <div>
+              <p>© 2009-2022 Труба24.ру</p>
+              <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="about.html">О КОМПАНИИ</a></li>
+              <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+              <li><a href="services.html">УСЛУГИ</a></li>
+              <li><a href="clients.html">КЛИЕНТЫ</a></li>
+              <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+            <div>
+              <div>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>

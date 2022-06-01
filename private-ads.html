@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал металлопроката : продажа-покупка проката, трубы, арматуры, метизов на Труба24.ру</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/reset.css">
+     <link rel="stylesheet" href="styles/private-ads.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/application.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <script src="scripts/slider-ads.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="auth">
+        <div id="authWrap">
+            <img src="assets/img/auth.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>АВТОРИЗАЦИЯ</p>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <button>ВОЙТИ</button>
+            <div class="rememberForget">
+                <div>
+                    <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logoWrapBars">
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+                    <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+                </div>
+                <div class="barsWrap">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="btnWrap">
+                <button>ВОЙТИ</button>
+                <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <div>
+                        <a href="catalog.html">Каталог компаний</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="catalogSubMenu">
+                        <li><a href="#">ГЛАВНАЯ — </a></li>
+                        <li><a href="#">ЧАСТНЫЕ ОБЪЯВЛЕНИЯ</a></li>
+                    </ul>
+                </li>
+                <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+                <li><a href="application.html">Заявки</a></li>
+                <li><a href="private-ads.html">Частные объявления</a></li>
+                <li><a href="analytics.html">Аналитика</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="introduction">
+        <div class="container">
+            <div class="introduction-application-wrap">
+                <div class="application-wrap-col">
+                    <div class="application-left">
+                        <div class="application-title private-ads">
+                            <h1>ЧАСТНЫЕ ОБЪЯВЛЕНИЯ О ПРОДАЖЕ МЕТАЛЛО—ПРОКАТА В РОССИИ</h1>
+                        </div>
+                    </div>
+                    <div class="application-right">
+                        <img src="assets/img_application/main.png" title="application-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="application-section" id="products">
+        <div class="container">
+            <div class="list">
+                <ul>
+                    <li>
+                        <img src="assets/img/main3.png" alt="main3">
+                        <a href="#">Трубы</a>
+                    </li>
+                    <li>
+                        <a href="#">Запорная арматура</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/main5.png" alt="main5">
+                        <a href="#">Сортовой и фасонный прокат</a>
+                    </li>
+                    <li>
+                        <a href="#">Листовой прокат</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/main7.png" alt="main7">
+                        <a href="#">Цветные металлы</a>
+                    </li>
+                    <li>
+                        <a href="#">Метизы и крепеж</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/main9.png" alt="main9">
+                        <a href="#">Лом, отходы, сырье</a>
+                    </li>
+                    <li>
+                        <a href="#">Прочая металло-продукция</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/main11.png" alt="main11">
+                        <a href="#">Ободурование и инструмент</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-add-priduct">
+                <button><a class="popup-open" href="#">Добавить объявление</a></button>
+            </div>
+        </div>
+    </section>
+
+ 
+
+<section>
+    <div class="container">
+        <div class="application-search">
+            <input placeholder="Введите название товара" type="text">
+        </div>
+    </div>
+</section>
+
+	<section>
+		<div class="container">
+			<div class="latest-ads">
+				<div class="latest-ads-wrap">
+					<div class="latest-ads-title">
+                        <h2>ПОСЛЕДНИЕ ОБЪЯВЛЕНИЯ</h2>               
+                    </div>
+					<div class="latest-ads-card">
+						  <div class="latest-ads-item premium">
+                                <div class="latest-ads-card-img img-premium">
+                              <img src="assets/img_private_ads/private-card-img.png" title="card">
+                          </div>
+                            <div class="latest-ads-card-desk">
+                                <div class="ads-card-desk-item title"><span>Труба бесшовные ГОСТ 8732-78/8734-75</span></div>
+                                <div class="ads-card-desk-item date"><span>12 апреля, 2022</span><span>Продажа</span></div>
+                                <div class="ads-card-desk-item tel"><span><img src="assets/img_application/icon-tel-card.svg" title="#">8 (495) 203-89-87</span></div>
+                                <div class="ads-card-desk-item"><span>ООО “ЧЕЛЯБСТАЛЬ”</span></div>
+                            </div>
+                            <div class="latest-ads-desk-adress primuim-adress">
+                                <span>Продам трубу б/у 720х9 (1 машина) в г. Подольск, цена 50 000 с НДС.</span>
+                            </div>  
+
+                                <div class="latest-ads-desk-btn">
+                                     <button><img src="assets/img_application/applocation-mail-btn.svg">НАПИСАТЬ</button>
+                                    <button><img src="assets/img_application/applocation-star-btn.svg">ИЗБРАННОЕ</button>
+                            </div>                                        
+                        </div>
+
+						  <div class="latest-ads-item">
+                                <div class="latest-ads-card-img">
+                              <img src="assets/img_private_ads/private-card-img.png" title="card">
+                          </div>
+                            <div class="latest-ads-card-desk">
+                                <div class="ads-card-desk-item title"><span>Труба бесшовные ГОСТ 8732-78/8734-75</span></div>
+                                <div class="ads-card-desk-item date"><span>12 апреля, 2022</span><span>Продажа</span></div>
+                                <div class="ads-card-desk-item tel"><span><img src="assets/img_application/icon-tel-card.svg" title="#">8 (495) 203-89-87</span></div>
+                                <div class="ads-card-desk-item"><span>ООО “ЧЕЛЯБСТАЛЬ”</span></div>
+                            </div>
+                            <div class="latest-ads-desk-adress">
+                                <span>Продам трубу б/у 720х9 (1 машина) в г. Подольск, цена 50 000 с НДС.</span>
+                            </div>  
+
+                                <div class="latest-ads-desk-btn">
+                                    <button><img src="assets/img_application/applocation-mail-btn.svg">НАПИСАТЬ</button>
+                                    <button><img src="assets/img_application/applocation-star-btn.svg">ИЗБРАННОЕ</button>
+                            </div>                                        
+                        </div>
+					</div>
+
+						 <div class="container-ads-center">
+                                      <span>МЕСТО ДЛЯ ОБЪЯВЛЕНИЯ</span>                
+                         </div>
+					<div class="latest-ads-card">
+						<div class="latest-ads-item">
+                                <div class="latest-ads-card-img">
+                              <img src="assets/img_private_ads/private-card-img.png" title="card">
+                          </div>
+                            <div class="latest-ads-card-desk">
+                                <div class="ads-card-desk-item title"><span>Труба бесшовные ГОСТ 8732-78/8734-75</span></div>
+                                <div class="ads-card-desk-item date"><span>12 апреля, 2022</span><span>Продажа</span></div>
+                                <div class="ads-card-desk-item tel"><span><img src="assets/img_application/icon-tel-card.svg" title="#">8 (495) 203-89-87</span></div>
+                                <div class="ads-card-desk-item"><span>ООО “ЧЕЛЯБСТАЛЬ”</span></div>
+                            </div>
+                            <div class="latest-ads-desk-adress">
+                                <span>Продам трубу б/у 720х9 (1 машина) в г. Подольск, цена 50 000 с НДС.</span>
+                            </div>  
+
+                                <div class="latest-ads-desk-btn">
+                                  <button><img src="assets/img_application/applocation-mail-btn.svg">НАПИСАТЬ</button>
+                                    <button><img src="assets/img_application/applocation-star-btn.svg">ИЗБРАННОЕ</button>
+                            </div>                                        
+                        </div>
+
+						<div class="latest-ads-item">
+                                <div class="latest-ads-card-img">
+                              <img src="assets/img_private_ads/private-card-img.png" title="card">
+                          </div>
+                            <div class="latest-ads-card-desk">
+                                <div class="ads-card-desk-item title"><span>Труба бесшовные ГОСТ 8732-78/8734-75</span></div>
+                                <div class="ads-card-desk-item date"><span>12 апреля, 2022</span><span>Продажа</span></div>
+                                <div class="ads-card-desk-item tel"><span><img src="assets/img_application/icon-tel-card.svg" title="#">8 (495) 203-89-87</span></div>
+                                <div class="ads-card-desk-item"><span>ООО “ЧЕЛЯБСТАЛЬ”</span></div>
+                            </div>
+                            <div class="latest-ads-desk-adress">
+                                <span>Продам трубу б/у 720х9 (1 машина) в г. Подольск, цена 50 000 с НДС.</span>
+                            </div>  
+
+                                <div class="latest-ads-desk-btn">
+                                  <button><img src="assets/img_application/applocation-mail-btn.svg">НАПИСАТЬ</button>
+                                    <button><img src="assets/img_application/applocation-star-btn.svg">ИЗБРАННОЕ</button>
+                            </div>                                        
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>		
+
+
+
+
+<section>
+        <div class="container">
+             <section id="benefits" class="benefits-ads">
+        <div class="container">
+            <h2 class="latest-ads-title">ОБЪЯВЛЕНИЯ О ПРОДАЖЕ МЕТАЛЛОПРОКАТА</h2>
+            <div class="pointerDesc">
+                <p>Трубопроводная арматура</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Трубы стальные</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Крепеж</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Сортовой, фасонный и листовой металлопрокат</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Уголки, сваи и прочая металлопродукция</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Балки</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Расходники для резки</p>
+            </div>
+            <div class="pointerDesc">
+                <p>Цветные и черные металлы</p>
+            </div>
+            <div class="img">
+                <img src="assets/img/main15.png" alt="main15">
+                <div>
+                    <p>Truba24.ru реализует металлопрокат, цена на который непременно порадует каждого покупателя. <span>Мы предлагаем стальные трубы</span> и другие необходимые материалы для всех видов строительства, а также укрепления для железобетонных конструкций и ремонта поверхностей.
+                        <br><br><br>
+                    Для того чтобы предложить заказчикам высококачественную арматуру, <span>мы ведем сотрудничество с лучшими поставщиками металлопроката, давно зарекомендовавшими себя на рынке</span> и ежегодно занимающими самые высокие позиции в рейтинге изготовителей. На нашем сайте вы всегда можете найти широкий выбор таких материалов, как:</p>
+                </div>
+            </div>
+            <div class="pointersMob">
+                <img src="assets/ico/pointer2.png" alt="pointer2">
+                <div>
+                    <p>Трубопроводная арматура</p>
+                    <p>Трубы стальные</p>
+                    <p>Крепеж</p>
+                    <p>Сортовой, фасонный и листовой металлопрокат</p>
+                    <p>Цветные и черные металлы</p>
+                    <p>Расходники для резки</p>
+                    <p>Балки</p>
+                    <p>Уголки, сваи и прочая металлопродукция</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="contrainer">
+    
+<script>
+ go_slider(jQuery);
+</script>
+
+
+
+<div id="slider-wrap">
+<div id="slider">
+<div class="slide" ><p>Слайд 1Товары, размещаемые на нашем ресурсе, могут быть как новыми, так и б/у. Если вы продавец, то наш ресурс поможет вам найти покупателя. А если вы – покупатель, то у вас есть все шансы получить выгодное предложение от поставщика, подав заявку в специальном разделе сайта. Для тех, кто оказывает различные услуги (например, грузоперевозки), мы создали специальный раздел «Услуги»</p></div>
+<div class="slide"><p>Слайд 2Товары, размещаемые на нашем ресурсе, могут быть как новыми, так и б/у. Если вы продавец, то наш ресурс поможет вам найти покупателя. А если вы – покупатель, то у вас есть все шансы получить выгодное предложение от поставщика, подав заявку в специальном разделе сайта. Для тех, кто оказывает различные услуги (например, грузоперевозки), мы создали специальный раздел «Услуги»</p></div>
+<div class="slide"><p>Слайд 3Товары, размещаемые на нашем ресурсе, могут быть как новыми, так и б/у. Если вы продавец, то наш ресурс поможет вам найти покупателя. А если вы – покупатель, то у вас есть все шансы получить выгодное предложение от поставщика, подав заявку в специальном разделе сайта. Для тех, кто оказывает различные услуги (например, грузоперевозки), мы создали специальный раздел «Услуги»</p></div>
+</div>
+</div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+                    <div>
+                        <p>© 2009-2022 Труба24.ру</p>
+                        <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+                    </div>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="about.html">О КОМПАНИИ</a></li>
+                        <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div>
+                        <div>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/popup.js"></script>
+ 
+</body>
+</html>

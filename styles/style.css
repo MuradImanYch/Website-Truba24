@@ -1,0 +1,2587 @@
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+body {
+    position: relative;
+}
+#auth {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    z-index: 2022;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+#auth div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#auth div img {
+    width: 80%;
+    margin: 100px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 60px;
+}
+#auth div p:nth-child(3) {
+    position: absolute;
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#auth div input:nth-child(4) {
+    position: absolute;
+    margin: 100px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+#auth div input:nth-child(5) {
+    position: absolute;
+    margin: 150px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+hr {
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    height: 2px;
+    border: 0;
+}
+header {
+    height: 240px;
+    border-bottom: 1px solid #E4E4E4;
+}
+header .container {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .logoText {
+    display: flex;
+    align-items: center;
+}
+header .logoText img {
+    width: 43.67px;
+    height: 43.67px;
+}
+header .logoText p {
+    width: 116.24px;
+    line-height: 12.38px;
+    color: #2E344B;
+    margin: 0 0 0 15px;
+    font-family: Montserrat;
+    font-size: 0.57em;
+}
+header .logoWrapBars {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+header .btnWrap {
+    display: flex;
+}
+header .btnWrap button {
+    border: 0;
+    height: 66px;
+    cursor: pointer;
+    font-size: 0.58em;
+    height: 41.25px;
+    font-family: Montserrat;
+}
+header .btnWrap button:nth-child(1) {
+    background: #1D5DB5;
+    color: #fff;
+}
+header .btnWrap button:nth-child(1):hover {
+    transition: 0.4s;
+    background: #236cd3;
+}
+header .btnWrap button:nth-child(2) {
+    border: 1px solid #1D5DB5;
+    color: #1D5DB5;
+    background: #fff;
+}
+header .btnWrap button:nth-child(2):hover {
+    transition: 0.4s;
+    background: rgb(241, 241, 241);
+}
+header .barsWrap .bar1, header .barsWrap .bar2, header .barsWrap .bar3  {
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+  }
+  nav .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+  }
+  nav .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 1em;
+    text-align: center;
+  }
+  nav .container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  nav .container ul li {
+    height: 100%;
+    margin: 50px 0 0 0;
+  }
+  nav .container ul li ul li a {
+    font-family: Montserrat;
+    font-size: 0.9em;
+  }
+  nav .container ul li div {
+    margin: 0 0 0 30px;
+    display: flex;
+  }
+  nav .container ul li ul li {
+    margin: 30px 0 0 0;
+  }
+  nav .catalogSubMenu {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .container ul li ul {
+    background: #FCFCFC;
+    margin: 10px 0 0 0;
+    padding: 0 0 20px 0;
+    position: absolute;
+  }
+  nav .container ul li ul li a:hover {
+    color: #4392ff;
+  }
+  nav .container ul li div div {
+    font-size: 0.9em;
+    border: 1px solid #1A3286;
+    padding: 5px;
+  }
+#introduction {
+    background: #F6F6F6;
+}
+#introduction .container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 0 0;
+}   
+#introduction .container h1 {
+    font-family: RFDewiExpanded;
+    text-align: center;
+    line-height: 34.1px;
+    text-transform: uppercase;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#introduction .container h1 span {
+    font-family: RFDewiExpanded;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button {
+    width: 100%;
+    border: 0;
+    background: #EB5829;
+    color: #fff;
+    height: 70px;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button:hover {
+    transition: 0.4s;
+    background: #f36738;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) {
+    margin: 70px 0 0 0;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) .img {
+    position: relative;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) .img img {
+    position: absolute;
+    cursor: pointer;
+}
+#products {
+    margin: 70px 0 0 0;
+}
+#products .container {
+    width: 90%;
+    margin: auto;
+}
+#products .search div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+#products button:nth-child(1) {
+    color: #fff;
+    background: #1D5DB5;
+}
+#products button:nth-child(2) {
+    color: #1D5DB5;
+    background: #fff;
+}
+#products .search div:nth-child(2) input {
+    outline: 0;
+    border: 1px solid #1D5DB5;
+    width: 100%;
+    height: 50px;
+    font-family: Montserrat;
+    padding: 0 60px;
+    margin: 20px 0 0 0;
+}
+#products .search div:nth-child(2) {
+    position: relative;
+}
+#products .search div:nth-child(2) img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 30px;
+    top: 38px;
+}
+#products .list {
+    margin: 50px 0 0 0;
+}
+#products .list ul li {
+    width: 100%;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+#products .list ul li a {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-family: Montserrat;
+    width: 150px;
+    line-height: 25px;
+}
+#products .list ul li a:nth-child(even) {
+    color: #2E344B;
+}
+#products .list ul li:nth-child(odd) {
+    background: #fff;
+}
+#products .list ul li a:nth-child(odd) {
+    color: #fff;
+}
+#products .list ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+#products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+    position: absolute;
+    right: 0;
+}
+#products .list ul li:nth-child(2) {
+    background: linear-gradient(to top, rgba(29, 97, 181, 0.7), rgba(29, 97, 181, 0.7)), url('../assets/img/main4.png') no-repeat center/cover;
+}
+#products .list ul li:nth-child(4) {
+    background: linear-gradient(to top, rgba(29, 97, 181, 0.7), rgba(29, 97, 181, 0.7)), url('../assets/img/main6.png') no-repeat center/cover;
+}
+#products .list ul li:nth-child(6) {
+    background: linear-gradient(to top, rgba(29, 97, 181, 0.7), rgba(29, 97, 181, 0.7)), url('../assets/img/main8.png') no-repeat center/cover;
+}
+#products .list ul li:nth-child(8) {
+    background: linear-gradient(to top, rgba(29, 97, 181, 0.7), rgba(29, 97, 181, 0.7)), url('../assets/img/main10.png') no-repeat center/cover;
+}
+#products .list ul li:nth-child(10) {
+    background: linear-gradient(to top, rgba(29, 97, 181, 0.7), rgba(29, 97, 181, 0.7)), url('../assets/img/main12.png') no-repeat center/cover;
+}
+#products .container div:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#products .container div:nth-child(3) button {
+    height: 70px;
+    width: 230px;
+    border: 0;
+    background: transparent;
+    border-top: 1px solid #1D5DB5;
+    border-bottom: 1px solid #1D5DB5;
+    margin: 25px 0 0 0;
+    font-family: Montserrat;
+    color: #1D5DB5;
+    font-style: italic;
+    cursor: pointer;
+}
+#map {
+    margin: 70px 0 0 0;
+}
+#map .container {
+    width: 90%;
+    margin: auto;
+}
+#map h3 {
+    color: #2E344B;
+    font-weight: bold;
+    font-size: 1.37em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 35px;
+    font-family: RFDewiExpanded;
+}
+#map p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    line-height: 20px;
+    color: #2E344B;
+    font-family: Montserrat;
+}
+#map > p:nth-child(3) {
+    display: none;
+}
+#map .mapWrap {
+    overflow: scroll;
+}
+path {
+    transition:all .5s;
+    fill: rgba(126, 164, 233, 0);
+    stroke: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.indicator {
+    position: absolute;
+    color: #000;
+    padding: 5px 7px;
+    font: 0.8em Montserrat;
+    display: none;
+    border: 0;
+    border-top: 1px solid #000;
+    height: 30px;
+}
+.indicator p {
+    font-weight: bold;
+    width: 100px;
+}
+aside {
+    margin: 50px 0 0 0;
+}
+aside .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+aside .ad {
+    width: 280px;
+    height: 168px;
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E344B;
+}
+#ad {
+    margin: 90px 0 0 0;
+}
+#ad .container {
+    width: 90%;
+    margin: auto;
+}
+#ad .container div:nth-child(1) h3 {
+    color: #2E344B;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#ad .container > div:nth-child(1) {
+    display: flex;
+}
+#ad .container div:nth-child(1) div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#ad .container div:nth-child(1) div hr {
+    width: 100%;
+}
+#ad .container div:nth-child(1) div img {
+    width: 30px;
+    height: 30px;
+}
+#ad .container .adWrap .list {
+    margin: 50px 0 0 0;
+    flex-direction: column;
+}
+#ad .list .wrap:not(.wrap:last-child) {
+    border-bottom: 1px solid silver;
+}
+#ad .list .wrap:not(.wrap:first-child) {
+    padding: 70px 0;
+}
+#ad .list .wrap {
+    padding: 0 0 70px 0;
+    flex-direction: column;
+}
+#ad .list .wrap .head {
+    display: flex;
+    position: relative;
+}
+#ad .list .wrap .head div {
+    display: flex;
+    flex-direction: column;
+}
+#ad .list .wrap .head h5 {
+    font-weight: bold;
+    font-family: Montserrat;
+}
+#ad .list .wrap .head div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ad .list .wrap .head div p {
+    font-family: Montserrat;
+}
+#ad .list .wrap:nth-child(1) .head div .sell {
+    background: #1D5DB5;
+    color: #fff;
+    font-family: Montserrat;
+}
+#ad .list .wrap .head div .buy {
+    color: #fff;
+    font-family: Montserrat;
+    background: #EB5829;
+}
+#ad .list .btnWrap button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+#ad .list .btnWrap div button:nth-child(1) {
+    border: 1px solid #EB5829;
+}
+#ad .list .btnWrap div button:nth-child(2) {
+    border: 1px solid #EB5829;
+}
+#ad .list .btnWrap div button:nth-child(1):hover {
+    transition: 0.4s;
+    background: #000;
+    background: rgb(238, 238, 238);
+}
+#ad .list .btnWrap div button:nth-child(2):hover {
+    transition: 0.4s;
+    background: #f86a3b;
+}
+#ad .list .btnWrap > button {
+    border: 1px solid #1D5DB5;
+}
+#ad .list .btnWrap > button:hover {
+    transition: 0.4s;
+    background: #226cd4;
+}
+#ad .list .btnWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+} 
+#ad .list .btnWrap div {
+    display: flex;
+    justify-content: space-between;
+}
+#ad .list .wrap .btnWrap img {
+    position: absolute;
+}
+#ad .adNav {
+    display: none;
+}
+#ad .adWrap .adNavBtn div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#ad .adWrap .adNavBtn button {
+    height: 70px;
+    width: 230px;
+    border: 0;
+    background: transparent;
+    border-top: 1px solid #1D5DB5;
+    border-bottom: 1px solid #1D5DB5;
+    font-family: Montserrat;
+    color: #1D5DB5;
+    font-style: italic;
+    cursor: pointer;
+    margin: -25px 0 50px 0;
+}
+#news {
+    margin: 90px 0 0 0;
+}
+#news .container {
+    width: 90%;
+    margin: auto;
+}
+#news .container div:nth-child(1) h3 {
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#news .container > div:nth-child(1) {
+    display: flex;
+}
+#news .container div div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#news .container div:nth-child(1) div hr {
+    width: 100%;
+}
+#news .container div:nth-child(1) div img {
+    width: 30px;
+    height: 30px;
+}
+#benefits {
+    margin: 70px 0 0 0;
+    background: #F6F6F6;
+    padding: 100px 0 500px 0;
+    overflow: hidden;
+}
+#benefits .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#benefits h3 {
+    color: #2E344B;
+    font-weight: bold;
+    font-size: 1.37em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 35px;
+    font-family: RFDewiExpanded;
+}
+#benefits .img {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 0;
+    position: relative;
+}
+#benefits .img div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#benefits .img div p {
+    font-family: Montserrat;
+    text-align: center;
+    line-height: 21.7px;
+    font-size: 0.9em;
+    color: #2E344B;
+}
+#benefits .pointersMob {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+#benefits .pointersMob img {
+    width: 50px;
+}
+#benefits .pointersMob div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+#benefits .pointersMob div p {
+    margin: 45px 0 0 0;
+    font-family: Montserrat;
+    color: #2E344B;
+}
+#benefits .pointerDesc {
+    display: none;
+}
+#order {
+    margin: 70px 0 0 0;
+}
+#order .container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+#order h3 {
+    color: #2E344B;
+    font-weight: bold;
+    font-size: 1.37em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 35px;
+    font-family: RFDewiExpanded;
+}
+#order .container div:nth-child(1) > p {
+    margin: 70px 0 0 0;
+    border: 1px solid #E4E4E4;
+    max-width: 250px;
+    padding: 40px 20px;
+    line-height: 25px;
+    color: #2E344B;
+    font-family: Montserrat;
+}
+#order .container div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+#order .container div:nth-child(1) div p {
+    color: #2E344B;
+    font-family: 'Montserrat';
+    width: 260px;
+    line-height: 25px;
+    padding: 0 0 0 15px;
+}
+#order .container div:nth-child(1) div {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+#order .container div:nth-child(1) div p span {
+    margin: 0 50px 0 0;
+    color: #2E344B;
+    font-family: 'Montserrat';
+}
+#order .container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+#order .container div:nth-child(2) img {
+    width: 70%;
+    margin: 0 0 0 40px;
+}
+#order .container div:nth-child(2) button {
+    width: 100%;
+    border: 0;
+    background: #EB5829;
+    color: #fff;
+    height: 70px;
+    margin: -30px 0 0 0;
+    cursor: pointer;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+}
+#order .container div:nth-child(2) button:hover {
+    transition: 0.4s;
+    background: #f36738;
+}
+#order .container > img {
+    position: absolute;
+    left: -70px;
+}
+footer {
+    background: #0B3164;
+    padding: 70px 0;
+    margin: 70px 0 0 0;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+}
+footer .container div:nth-child(1) .logoText {
+    display: flex;
+}
+footer .container div:nth-child(1) .logoText img {
+    width: 90px;
+    height: 80px;
+}
+footer .container div:nth-child(1) .logoText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 0 0 0 30px;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.8em;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 15px;
+}
+footer .container div:nth-child(1) .links {
+    margin: 40px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .container div:nth-child(1) .links ul li {
+    margin: 20px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul li a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    font-family: Montserrat;
+}
+footer .container div:nth-child(1) .links > div div a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 20px 0 0 0;
+    opacity: 0.5;
+}
+footer .container div:nth-child(1) .links > div div a:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+footer .container div .links > div {
+    margin: 70px 0 0 0;
+}
+footer .container div .links > div div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container div .links > div div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+#news .content {
+    padding: 10px 0 0 0;
+}
+#news .content .card {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #CCCCCC;
+    margin: 50px 0 0 0;
+    background: #FCFCFC;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#news .content .card > div {    
+    flex-direction: column;
+}
+#news .content .card > div > img {
+    min-width: 100px;
+    min-height: 100px;
+}
+#news .content .card > div div {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+}
+#news .content .card > div div p:nth-child(1) {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2E344B;
+    font-size: 1.2em;
+}
+#news .content .card > div div p:nth-child(2) {
+    margin: 20px 0 0 0;
+    font-family: Montserrat;
+    color: #2E344B;
+    font-size: 0.9em;
+}
+#news .content .card > div div p:nth-child(2) span {
+    font-family: Montserrat;
+    color: #2E344B;
+    margin: 0 0 0 10px;
+}
+#news .content .card > div div img {
+    max-width: 15px;
+    max-height: 15px;
+}
+#news .content .card > div:nth-child(2) button {
+    color: #1D5DB5;
+	border: 2px solid #1D5DB5;
+	font-family: 'RFDewiExpanded';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 135%;
+	margin: 15px auto 0 auto;
+	padding: 25px 45px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.02em;
+	overflow: hidden;
+	transition: color 1s;
+	position: relative;
+    cursor: pointer;
+    background: transparent;
+    width: 100%;
+}
+#news .content .card > div:nth-child(2) button:hover {
+    color: white;
+    z-index: 2;
+}
+#news .content .card > div:nth-child(2) button::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 0;
+	height: 100%;
+	background-color: #1D5DB5;
+	transform: skewX(35deg);
+	z-index: -1;
+	transition: width 1s;
+}
+#news .content .card > div:nth-child(2) button:hover::before {
+    width: 150%;
+}
+
+
+@media (min-width: 280px) {
+    header .btnWrap button:nth-child(1) {
+        width: 100px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 150px;
+    }
+    #introduction .img {
+        background: url('../assets/img/main1.png') center/contain no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        width: 100px;
+        left: 80px;
+        top: 80px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 100px;
+        height: 50px;
+        font-size: 0.8em;
+        border: 0;
+        cursor: pointer;
+        border: 1px solid #1D5DB5;
+    }
+    #products .search:nth-child(1) button:nth-child(1):hover {
+        transition: 0.4s;
+        background: #226cd4;
+    }
+    #products .search:nth-child(1) button:nth-child(2):hover {
+        transition: 0.4s;
+        background: rgb(231, 231, 231);
+    }
+    #products .list ul li {
+        height: 250px;
+        border: 1px solid #E4E4E4;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 120px;
+        height: 120px;
+    }
+    #ad .list .wrap .head img {
+        width: 70px;
+        height: 70px;
+    }
+    #ad .list .wrap .head .premium {
+        position: absolute;
+        width: 48px;
+        height: 16px;
+        top: 10px;
+        left: 0;
+    }
+    #ad .list .wrap .head div {
+        height: 50px;
+    }
+    #ad .list .wrap .head h5 {
+        font-size: 0.8em;
+    }
+    #ad .list .wrap .head div p {
+        font-size: 0.62em;
+    }
+    #ad .list .wrap .head div span {
+        font-size: 0.6em;
+        padding: 3px 7px;
+        margin: 0 0 0 10px;
+    }
+    #ad .list .btnWrap {
+        margin: 50px 0 0 0;
+        height: 120px;
+    }
+    #ad .list .btnWrap button {
+        height: 55px;
+        padding: 0 0 0 20px;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        width: 110px;
+        color: #EB5829;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        width: 110px;
+        background: #EB5829;
+        color: #fff;
+    }
+    #ad .list .btnWrap > button {
+        width: 100%;
+        color: #fff;
+        background: #1D5DB5;
+        font-size: 0.6em;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        width: 49%;
+        font-size: 0.6em;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        width: 49%;
+        font-size: 0.6em;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        left: 20px;
+        width: 15px;
+        height: 15px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 90px;
+        width: 15px;
+        height: 15px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        width: 15px;
+        height: 15px;
+        bottom: 20px;
+        left: 35px;
+    }
+    #news .container div:nth-child(1) h3 {
+        font-size: 1em;
+    }
+    #benefits .img div p {
+        width: 270px;
+    }
+    #benefits .pointersMob div p {
+        font-size: 0.7em;
+        padding: 0 0 0 15px;
+    }
+    #order .container > img {
+        width: 150px;
+        height: 150px;
+        top: 800px;
+        left: -70px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 0.7em;
+        margin: 40px 0 0 0;
+    }
+    #auth div button {
+        width: 155px;
+        border: 0;
+        background: #EB5829;
+        color: #fff;
+        height: 30px;
+        margin: 220px 0 0 0;
+        cursor: pointer;
+        font-family: RFDewiExpanded;
+        font-size: 0.5em;
+        position: absolute;
+    }
+    #auth div button:hover {
+        transition: 0.4s;
+        background: #f36738;
+    }
+    #auth div .rememberForget {
+        position: absolute;
+        margin: 300px 0 0 0;
+        flex-direction: row;
+        font-size: 0.8em;
+        justify-content: space-between;
+        width: 65%;
+    }
+    #auth div .rememberForget div {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+    }
+    #auth div .rememberForget div input {
+        width: 14px;
+        height: 14px;
+    }
+    #auth div .rememberForget div label {
+        padding: 3px 0 0 5px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+    #auth div .rememberForget a {
+        padding: 7px 0 0 0;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+    }
+}
+
+
+@media (min-width: 320px) {
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 97px;
+        top: 80px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 130px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        left: 25px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 100px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 50px;
+    }
+    #benefits .pointersMob div p {
+        line-height: 15px;
+    }
+}
+
+
+@media (min-width: 360px) {
+    header .btnWrap button:nth-child(1) {
+        width: 128.12px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 171.88px;
+    }
+    header .logoText p { 
+        font-size: 0.65em;
+        width: 130px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 115px;
+        top: 80px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 145px;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 170px;
+        height: 170px;
+    }
+    #ad .container div:nth-child(1) h3 {
+        font-size: 1.37em;
+    }
+    #ad .list .wrap .head img {
+        width: 90px;
+        height: 90px;
+    }
+    #ad .list .wrap .head div {
+        height: 70px;
+    }
+    #ad .list .wrap .head h5 {
+        font-size: 1em;
+    }
+    #ad .list .wrap .head div p {
+        font-size: 0.7em;
+    }
+    #ad .list .wrap .head div span {
+        font-size: 0.8em;
+        padding: 4px 8px;
+        margin: 0 0 0 15px;
+    }
+    #ad .list .wrap .head .premium {
+        width: 60px;
+        height: 18px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        left: 30px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 110px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 70px;
+    }
+    #news .container div:nth-child(1) h3 {
+        font-size: 1.37em;
+    }
+}
+
+
+@media (min-width: 375px) {
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 122px;
+    }
+    #products .list ul li {
+        height: 270px;
+    }
+    #ad .list .btnWrap > button {
+        font-size: 0.7em;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        font-size: 0.7em;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        font-size: 0.7em;
+    }
+    #order .container div:nth-child(1) div p {
+        width: 290px;
+    }
+    #order .container div:nth-child(1) > p {
+        max-width: 290px;
+    }
+    #order .container > img {
+        top: 740px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1em;
+        margin: 0;
+    }
+    #auth div .rememberForget {
+        width: 58%;
+    }   
+}
+
+
+@media (min-width: 390px) {
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 129px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 170px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        left: 35px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 120px;
+    }
+    #auth div img:nth-child(2) {
+        top: 16px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (min-width: 412px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 55px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 138px;
+    }
+    #products .list ul li {
+        height: 300px;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 200px;
+        height: 200px;
+    }
+    #ad .list .wrap .head img {
+        width: 100px;
+        height: 100px;
+    }
+    #ad .list .wrap .head div {
+        height: 90px;
+    }
+    #ad .list .wrap .head h5 {
+        font-size: 1.2em;
+    }
+    #ad .list .wrap .head div p {
+        font-size: 0.9em;
+    }
+    #ad .list .wrap .head div span {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+    #ad .list .wrap .head .premium {
+        width: 70px;
+        height: 20px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        left: 40px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 125px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 80px;
+    }
+    #benefits .pointersMob div p {
+        margin: 46px 0 0 0;
+    }
+    #order .container div:nth-child(1) div p {
+        width: 300px;
+    }
+    #order .container div:nth-child(1) > p {
+        max-width: 330px;
+        padding: 60px 40px;
+    }
+    #order .container > img {
+        width: 170px;
+        height: 170px;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 1em;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 45%;
+    }
+    #auth div input:nth-child(5) {
+        margin: 160px 0 0 0;
+        width: 45%;
+    }
+    #auth div button {
+        margin: 250px 0 0 0;
+        height: 40px;
+        width: 45%;
+    }
+    #auth div .rememberForget {
+        margin: 350px 0 0 0;
+    }
+}   
+
+
+@media (min-width: 540px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 75px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 195px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 220px;
+        height: 65px;
+        font-size: 1em;
+    }
+    #products .list ul li {
+        height: 370px;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 230px;
+        height: 230px;
+    }
+    #ad .list .wrap .head img {
+        width: 130px;
+        height: 130px;
+    }
+    #ad .list .wrap .head div {
+        height: 100px;
+    }
+    #ad .list .wrap .head .premium {
+        width: 90px;
+        height: 26px;
+        top: 15px;
+    }
+    #ad .list .btnWrap > button {
+        font-size: 0.9em;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        font-size: 0.9em;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        font-size: 0.9em;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        top: 17px;
+        left: 50px;
+        width: 20px;
+        height: 20px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 175px;
+        width: 20px;
+        height: 20px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 100px;
+        width: 18px;
+        height: 18px;
+        top: 85px;
+    }
+    #benefits .pointersMob div {
+        padding: 30px;
+    }
+    #benefits .pointersMob div p {
+        margin: 47px 0 0 0;
+    }
+    #order h3 {
+        width: 250px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.4em;
+        margin: -50px 0 0 0;
+    }
+    #auth div .rememberForget {
+        width: 50%;
+    }
+}  
+
+
+@media (min-width: 768px) {
+    header .logoWrapBars { 
+        justify-content: space-around;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 150px;
+    }
+    #introduction .container h1 span {
+        font-size: 1.5em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 300px;
+    }
+    #products .search {
+        padding: 0 100px;
+    }
+    #products .list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #products .list ul li {
+        width: 335px;
+        height: 280px;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 150px;
+        height: 150px;
+    }
+    #ad .list .wrap .head img {
+        width: 180px;
+        height: 180px;
+    }
+    #ad .list .wrap .head div {
+        height: 120px;
+    }
+    #ad .list .wrap .head h5 {
+        font-size: 1.6em;
+    }
+    #ad .list .wrap .head div p {
+        font-size: 1.3em;
+    }
+    #ad .list .wrap .head div span {
+        font-size: 1.4em;
+        padding: 8px 12px;
+    }
+    #ad .list .btnWrap button {
+        height: 70px;
+    }
+    #ad .list .btnWrap {
+        height: 155px;
+    }
+    #ad .list .wrap .head .premium {
+        width: 130px;
+        height: 35px;
+        top: 20px;
+    }
+    #ad .list .btnWrap > button {
+        font-size: 1em;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        font-size: 1em;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        font-size: 1em;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        top: 23px;
+        left: 80px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 245px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 160px;
+        width: 22px;
+        height: 22px;
+        top: 110px
+    }
+    #benefits h3 {
+        width: 350px;
+    }
+    #benefits .pointersMob {
+        padding: 0 0 0 150px;
+    }
+    #benefits .pointersMob div p {
+        font-size: 1em;
+        padding: 0 0 0 10px;
+    }
+    #order .container div:nth-child(1) div p {
+        width: 420px;
+    }
+    #order .container div:nth-child(1) > p {
+        max-width: 450px;
+    }
+    #order .container div:nth-child(2) button {
+        height: 100px;
+        font-size: 1em;
+        margin: -80px 0 0 120px;
+        width: 400px;
+    }
+    #order .container div:nth-child(2) img {
+        margin: 0;
+    }
+    #order .container > img {
+        width: 270px;
+        height: 270px;
+        top: 600px;
+        left: -100px;
+    }
+    #auth div img {
+        width: 400px;
+        height: 450px;
+    }
+    #auth div img:nth-child(2) {
+        top: 18px;
+        left: 240px;
+        width: 120px;
+        height: 120px;
+    }
+    #auth div input:nth-child(4) {
+        width: 30%;
+    }
+    #auth div input:nth-child(5) {
+        width: 30%;
+        margin: 170px 0 0 0;
+    }
+    #auth div button {
+        width: 30%;
+        margin: 300px 0 0 0;
+    }
+    #auth div .rememberForget {
+        margin: 420px 0 0 0;
+        width: 33%;
+    }
+}
+
+
+@media (min-width: 820px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 170px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 322px;
+    }
+    #products .search {
+        padding: 0 140px;
+    }
+    #products .list ul li {
+        width: 355px;
+        height: 290px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        top: 25px;
+        left: 90px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 185px;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 280px;
+    }
+}
+
+
+@media (min-width: 912px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 200px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        left: 364px;
+    }
+    #products .search:nth-child(1) button {
+        min-width: 250px;
+        height: 75px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        top: 24px;
+        left: 115px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 265px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 240px;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 320px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        height: 170px;
+    }
+    header .barsWrap {
+        display: none;
+    }
+    header .container {
+        width: 1000px;
+        flex-direction: row;
+    }
+    header .logoWrapBars { 
+        display: block;
+    }
+    header .logoText img {
+        width: 85.7px;
+        height: 85.7px;
+    }
+    header .logoText p { 
+        font-size: 0.9em;
+        width: 180px;
+        line-height: 24.3px;
+        margin: 0 0 0 40px;
+    }
+    header .btnWrap button {
+        font-size: 0.8em;
+        height: 50px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 155px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 225px;
+    }
+    nav {
+        height: 70px;
+        position: static;
+        padding: 0;
+        display: block;
+    }
+    nav .container {
+        width: 1000px;
+        height: 100%;
+    }
+    nav .container ul {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    nav .container ul li {
+        position: relative;
+        margin: 0;
+    }
+    nav .container ul li a {
+        display: inline-block;
+        position: relative;
+        padding: 30px 0 0 0;
+        font-size: 0.9em;
+    }
+    nav .container ul li a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #1D5DB5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    nav .container ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    nav .container ul li div {
+        height: 100%;
+      }
+      nav .container ul li div div {
+        display: none;
+      }
+      nav .container ul li ul {
+        flex-direction: column;
+        background: #fff;
+        width: 240px;
+        margin: 0px 0 0 29px;
+        height: auto;
+        padding: 10px 0px 10px 20px;
+        align-items: flex-start;
+      }
+      nav .container ul li ul li a {
+        padding: 0;
+      }
+      nav .container ul li ul li a::after {
+        height: 0px;
+      }
+      nav .container ul li ul li {
+        margin: 10px 0 0 0;
+      }
+    #introduction .container {
+        width: 1000px;
+    }
+    #introduction .container div:nth-child(1) > div:nth-child(1) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #introduction .container div:nth-child(1) > div:nth-child(1) button {
+        width: 300px;
+    }
+    #introduction .img {
+        width: 500px;
+        height: 500px;
+    }
+    #introduction .container div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+    }
+    #introduction .container h1 {
+        text-align: left;
+        line-height: 40px;
+        font-size: 1.2em;
+    }
+    #introduction .container h1 span {
+        font-size: 1.4em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) {
+        margin: 0;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        width: 150px;
+        left: 180px;
+        top: 225px;
+    }
+    #products {
+        margin: -251px 0 0 0;
+    }
+    #products .container {
+        width: 1000px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #products .search {
+        display: flex;
+        padding: 0;
+        margin: 70px 0 0 0;
+    }
+    #products .search div:nth-child(2) {
+        width: 100%;
+    }
+    #products .search div:nth-child(1) button {
+        height: 65px;
+    }
+    #products .search div:nth-child(2) input {
+        border-top: 1px solid #1D5DB5;
+        border-right: 1px solid #1D5DB5;
+        border-bottom: 1px solid #1D5DB5;
+        border-left: 0;
+        margin: 0;
+        height: 65px;
+        padding: 0 80px;
+    }
+    #products .search div:nth-child(2) img {
+        width: 18px;
+        height: 18px;
+        top: 27px;
+    }
+    #products .list ul li {
+        margin: 0;
+        width: 200px;
+        height: 180px;
+    }
+    #products .container div:nth-child(3) {
+        justify-content: flex-start;
+    }
+    #products .container div:nth-child(3) button {
+        margin: 0;
+        width: 200px;
+    }
+    #products .list {
+        margin: 0;
+    }
+    #introduction {
+        min-height: 668px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 210px 0;
+    }
+    #map .container {
+        width: 1000px;
+    }
+    #map p:nth-child(3) {
+        display: none;
+    }
+    #map .mapWrap {
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 100px;
+        height: 100px;
+    }
+    #map p {
+        line-height: 10px;
+    }
+    #map h3 {
+        font-size: 1.8em;
+    }
+    .indicator {
+        font-size: 1em;
+    }
+    #ad .container div:nth-child(1) h3 {
+        font-size: 1.8em;
+    }
+    #products .list ul li a {
+        left: 30px;
+        bottom: 30px;
+    }
+    aside .container {
+        width: 1000px;
+    }
+    aside .ad {
+        width: 100%;
+    }
+    #ad .container {
+        width: 1000px;
+    }
+    #ad .container div:nth-child(1) div img {
+        width: 40px;
+        height: 40px;
+    }
+    #ad .container .adWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #ad .container .adWrap .list {
+        width: 700px;
+    }
+    #ad .container .adWrap .wrap {
+        flex-direction: row;
+        padding: 0;
+        height: 160px;
+    }
+    #ad .container .adWrap .wrap:nth-child(1) {
+        border: 3px solid #EB5829;
+    }
+    #ad .list .wrap .head img {
+        width: 90px;
+        height: 90px;
+    }
+    #ad .list .wrap .head h5 {
+        font-size: 1em;
+    }
+    #ad .list .wrap .head div p {
+        font-size: 0.87em;
+    }
+    #ad .list .wrap .head div span {
+        font-size: 0.6em;
+        padding: 4px 5px;
+    }
+    #ad .list .wrap .head div {
+        height: 80px;
+    }
+    #ad .list .wrap .head .premium {
+        width: 65px;
+        height: 18px;
+        top: 15px;
+        left: 15px;
+    }
+    #ad .list .btnWrap button {
+        height: 40px;
+    }
+    #ad .list .btnWrap {
+        height: auto;   
+        justify-content: flex-start;
+        max-width: 300px;
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
+    #ad .list .btnWrap > button {
+        font-size: 0.7em;
+        margin: 5px 0 0 0;
+    }
+    #ad .list .btnWrap div button:nth-child(1) {
+        font-size: 0.7em;
+    }
+    #ad .list .btnWrap div button:nth-child(2) {
+        font-size: 0.7em;
+    }
+    #ad .list .wrap:not(.wrap:first-child) {
+        border-bottom: 0;
+    }
+    #ad .list .wrap:not(.wrap:first-child) {
+        padding: 0;
+    }
+    #ad .list .wrap .head {
+        padding: 0 0 0 20px;
+    }
+    #ad .list .wrap .head div {
+        width: auto;
+    }
+    #ad .list .wrap .head div {
+        padding: 0 0 0 10px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(3) {
+        top: 12px;
+        left: 14px;
+        width: 15px;
+        height: 15px;
+    }
+    #ad .list .wrap .btnWrap img:nth-child(4) {
+        right: 116px;
+        width: 15px;
+        height: 15px;
+        top: 12px;
+    }
+    #ad .list .wrap .btnWrap > img {
+        left: 36px;
+        top: 58px;
+        width: 15px;
+        height: 15px;
+    }
+    #ad .adNav {
+        width: 300px;
+        margin: 50px 0 0 0;
+        display: block;
+    }
+    #ad .adNav ul {
+        width: 100%;
+        height: 100%;
+        background: #F6F6F6;
+    }
+    #ad .adNav ul li {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        padding: 0 0 0 30px;
+        align-items: center;
+        border: 1px solid #E4E4E4;
+        font-family: Montserrat;
+    }
+    #ad .adNav ul li:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    #ad .adNav ul li {
+        color: #fff;
+    }
+    #ad .adNav ul a:nth-child(1) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main3.png') no-repeat right/contain;
+    }
+    #ad .adNav ul a:nth-child(2) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main4.png') no-repeat center/cover;
+    }
+    #ad .adNav ul a:nth-child(3) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main5.png') no-repeat right/contain;
+    }
+    #ad .adNav ul a:nth-child(4) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main6.png') no-repeat center/cover;
+    }
+    #ad .adNav ul a:nth-child(5) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main7.png') no-repeat right/contain;
+    }
+    #ad .adNav ul a:nth-child(6) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main8.png') no-repeat center/cover;
+    }
+    #ad .adNav ul a:nth-child(7) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main9.png') no-repeat right/contain;
+    }
+    #ad .adNav ul a:nth-child(8) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main10.png') no-repeat center/cover;
+    }
+    #ad .adNav ul a:nth-child(9) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main11.png') no-repeat right/contain;
+    }
+    #ad .adNav ul a:nth-child(10) li {
+        background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main12.png') no-repeat center/cover;
+    }
+    #ad .adWrap .adNavBtn button {
+       width: 100%;
+       margin: 0;
+    }
+    #news {
+        margin: 110px 0 0 0;
+    }
+    #news .container div:nth-child(1) h3 {
+        font-size: 1.8em;
+    }
+    #news .container div:nth-child(1) div img {
+        width: 40px;
+        height: 40px;
+    }
+    #benefits { 
+        margin: 120px 0 0 0;
+        padding: 100px 0 200px 0;
+    }
+    #benefits .img {
+        margin: 150px 0 0 0;
+    }
+    #benefits h3 {
+        font-size: 1.8em;
+        width: 400px;
+    }
+    #benefits .container {
+        width: 1000px;
+        margin: auto;
+        position: relative;
+    }
+    #benefits .img div p {
+        font-size: 1em;
+        width: 340px;
+    }
+    #benefits .pointersMob {
+        display: none;
+    }
+    #benefits .pointerDesc {
+        display: block;
+    }
+    #benefits .pointerDesc p {
+        color: #2E344B;
+        line-height: 25px;
+    }
+    #benefits .pointerDesc:nth-child(2) {
+        position: absolute;
+        left: 100px;
+        top: 170px;
+        border-top: 1px solid #444444;
+        border-right: 1px solid #444444;
+        transform: skew(45deg);
+        width: 150px;
+        height: 40px;
+        width: 180px;
+    }
+    #benefits .pointerDesc:nth-child(2) p {
+        transform: skew(-45deg);
+        margin: -58px 0 0 30px;
+        text-align: right;
+        font-family: Montserrat;
+    }
+    #benefits .pointerDesc:nth-child(3) {
+        position: absolute;
+        left: 0;
+        top: 300px;
+        border-top: 1px solid #444444;
+        border-right: 1px solid #444444;
+        transform: skew(35deg);
+        width: 100px;
+        height: 40px;
+    }
+    #benefits .pointerDesc:nth-child(3) p {
+        transform: skew(-35deg);
+        margin: -58px 0 0 15px;
+        text-align: right;
+        font-family: Montserrat;
+        width: 100px;
+    }
+    #benefits .pointerDesc:nth-child(4) {
+        position: absolute;
+        left: 0;
+        bottom: 100px;
+        border-bottom: 1px solid #444444;
+        border-right: 1px solid #444444;
+        transform: skew(-35deg);
+        width: 100px;
+        height: 40px;
+    }
+    #benefits .pointerDesc:nth-child(4) p {
+        transform: skew(35deg);
+        margin: 10px 0 0 -25px;
+        text-align: right;
+        font-family: Montserrat;
+        width: 100px;
+    }
+    #benefits .pointerDesc:nth-child(5) {
+        position: absolute;
+        left: 60px;
+        bottom: -100px;
+        border-bottom: 1px solid #444444;
+        border-right: 1px solid #444444;
+        transform: skew(-35deg);
+        width: 230px;
+        height: 60px;
+    }
+    #benefits .pointerDesc:nth-child(5) p {
+        transform: skew(35deg);
+        margin: 4px 0 0 -55px;
+        text-align: right;
+        font-family: Montserrat;
+        width: 250px;
+    }
+    #benefits .pointerDesc:nth-child(6) {
+        position: absolute;
+        right: 60px;
+        bottom: -100px;
+        border-bottom: 1px solid #444444;
+        border-left: 1px solid #444444;
+        transform: skew(35deg);
+        width: 230px;
+        height: 60px;
+    }
+    #benefits .pointerDesc:nth-child(6) p {
+        transform: skew(-35deg);
+        margin: 4px 0 0 -55px;
+        text-align: right;
+        font-family: Montserrat;
+        width: 250px;
+    }
+    #benefits .pointerDesc:nth-child(7) {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        border-bottom: 1px solid #444444;
+        border-left: 1px solid #444444;
+        transform: skew(35deg);
+        width: 100px;
+        height: 40px;
+    }
+    #benefits .pointerDesc:nth-child(7) p {
+        transform: skew(-35deg);
+        margin: 10px 0 0 -25px;
+        text-align: right;
+        font-family: Montserrat;
+        width: 100px;
+    }
+    #benefits .pointerDesc:nth-child(8) {
+        position: absolute;
+        right: 0;
+        top: 300px;
+        border-top: 1px solid #444444;
+        border-left: 1px solid #444444;
+        transform: skew(-35deg);
+        width: 160px;
+        height: 40px;
+    }
+    #benefits .pointerDesc:nth-child(8) p {
+        transform: skew(35deg);
+        margin: -58px 0 0 -15px;
+        text-align: left;
+        font-family: Montserrat;
+        width: 140px;
+    }
+    #benefits .pointerDesc:nth-child(9) {
+        position: absolute;
+        right: 100px;
+        top: 170px;
+        border-top: 1px solid #444444;
+        border-left: 1px solid #444444;
+        transform: skew(-45deg);
+        width: 150px;
+        height: 40px;
+        width: 180px;
+    }
+    #benefits .pointerDesc:nth-child(9) p {
+        transform: skew(45deg);
+        margin: -58px 0 0 -25px;
+        text-align: left;
+        font-family: Montserrat;
+    }
+    #order .container {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #order .container > img {
+        width: 250px;
+        height: 250px;
+        top: -55px;
+        left: 42%;
+    }
+    #order .container > div:nth-child(2) {
+        margin: 0 0 0 -65px;
+    }
+    #order .container > div:nth-child(2) img {
+        margin: 0 -80px 0 0;
+    }
+    #order .container > div:nth-child(2) button {
+        width: 350px;
+        font-size: 0.9em;
+        height: 80px;
+    }
+    #order h3 {
+        text-align: left;
+        font-size: 1.8em;
+        width: 600px;
+    }
+    #order .container div:nth-child(1) div p {
+        width: 400px;
+    }
+    #order .container div:nth-child(1) > p {
+        max-width: 650px;
+        padding: 30px 50px;
+    }
+    footer .container {
+        width: 1000px;
+    }
+    footer .container div {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container div:nth-child(1) .links {
+        margin: 0;
+        flex-direction: column;
+        width: 600px;
+        margin: -10px 0 0 0;
+    }
+    footer .container div:nth-child(1) .links > div div {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container div:nth-child(1) .links > div div a {
+        margin: 15px 0 0 0;
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links > div {
+       padding: 0 15px 20px 15px;
+       justify-content: center;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.7em;
+        line-height: 18px;
+    }
+    footer .container div:nth-child(1) .logoText img {
+        width: 130px;
+        height: 130px;
+    }
+    footer .container div:nth-child(1) .logoText div {
+        justify-content: space-around;
+        padding: 0 0 0 10px;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    footer .container div .links > div {
+        margin: 0;
+    }
+    #news .container {
+        width: 1000px;
+    }
+    #news .content .card {
+        height: 200px;
+        margin: 60px 0 0 0;
+        flex-direction: row;
+        padding: 30px 60px;
+        border: 0;
+    }
+    #news .content .card > div {    
+        flex-direction: row;
+    }
+    #news .content .card > div div p:nth-child(1) {
+        font-size: 1em;
+        width: 200px;
+        text-align: left;
+    }
+    #news .content .card > div div {
+        margin: -5px 50px 0 0;
+    }
+    #news .content .card > div div p:nth-child(2) {
+        margin: 10px 5px 0 0;
+        font-size: 0.75em;
+    }
+    #news .container div div {
+        justify-content: flex-end;
+    }
+    #news .content .card > div:nth-child(2) button {
+        width: 300px;
+        font-size: 0.9em;
+    }
+    #auth div img {
+        width: 450px;
+        height: 500px;
+        margin: 70px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.8em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        height: 60px;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 24%;
+        font-size: 1em;
+    }
+    #auth div .rememberForget div input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 515px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        font-size: 1em;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 25%;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1680px) {
+    header .container {
+        width: 1200px;
+    }
+    header .btnWrap button {
+        font-size: 0.93em;
+        height: 66px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 205px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 275px;
+    }
+    header .logoText p { 
+        font-size: 1.125em;
+        width: 230px;
+    }
+    nav .container {
+        width: 1200px;
+    }
+    #introduction .container {
+        width: 1200px;
+    }
+    #introduction .container h1 {
+        text-align: left;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img img {
+        width: 170px;
+        left: 200px;
+        top: 250px;
+    }
+    #products {
+        margin: -270px 0 0 0;
+    }
+    #products .container {
+        width: 1200px;
+    }
+    #products .list ul li {
+        width: 240px;
+        height: 200px;
+    }
+    #products .container div:nth-child(3) button {
+        width: 240px;
+    }
+    #products .search div:nth-child(1) button {
+        height: 75px;
+    }
+    #products .search div:nth-child(2) input {
+        height: 75px;
+    }
+    #products .search div:nth-child(2) img {
+        top: 32px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 190px 0
+    }
+    #introduction .img {
+        width: 550px;
+        height: 550px;
+    }
+    #introduction {
+        min-height: 730px;
+    }
+    #map .container {
+        width: 1200px;
+    }
+    #products .list ul li:nth-child(1) img, #products .list ul li:nth-child(3) img, #products .list ul li:nth-child(5) img, #products .list ul li:nth-child(7) img, #products .list ul li:nth-child(9) img {
+        width: 110px;
+        height: 110px;
+    }
+    aside .container {
+        width: 1200px;
+    }
+    #ad .container {
+        width: 1200px;
+    }
+    #ad .container .adWrap .adNav {
+        width: 400px;
+    }
+    #ad .container .adWrap .list {
+        width: 800px;
+    }
+    #ad .list .wrap .head {
+        padding: 0 0 0 50px;
+    }
+    #ad .list .wrap .head .premium {
+        left: 35px;
+    }
+    #order .container {
+        width: 1200px;
+    }
+    footer .container {
+        width: 1200px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.9em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links {
+        width: 700px;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .links > div {
+        padding: 0 26px 20px 26px;
+    }
+    #news .container {
+        width: 1200px;
+    }
+    #auth div img {
+        width: 600px;
+        height: 680px;
+        margin: 130px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 795px;
+        width: 200px;
+        height: 200px;
+    }
+    #auth div input:nth-child(5) {
+        margin: 220px 0 0 0;
+    }
+    #auth div button {
+        margin: 380px 0 0 0;
+        height: 80px;
+    }
+    #auth div .rememberForget {
+        margin: 580px 0 0 0;
+        width: 24%;
+    }
+}
+
+/*---*/
+
+@media (min-width: 280px) {
+    #auth div img:nth-child(2) {
+        height: auto;
+        transform: rotate(12deg);
+        top: 18px;
+    }
+}
+
+@media (min-width: 412px) {
+    #auth div img:nth-child(2) {
+        top: 25px;
+    }
+}
+
+@media (min-width: 540px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 130px;
+        width: 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 240px;
+    }
+}
+
+@media (min-width: 820px) {
+    #auth div img:nth-child(2) {
+        left: 260px;
+    }
+}
+
+@media (min-width: 912px) {
+    #auth div img:nth-child(2) {
+        top: 24px;
+        left: 290px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #auth div img:nth-child(2) {
+        top: 26px;
+        left: 320px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 450px;
+    }
+}
+
+@media (min-width: 1366px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #auth div img:nth-child(2) {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #auth div img:nth-child(2) {
+        left: 620px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #auth div img:nth-child(2) {
+        top: 36px;
+        left: 760px;
+        width: 180px;
+    }
+}

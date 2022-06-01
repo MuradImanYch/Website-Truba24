@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="auth">
+        <div id="authWrap">
+            <img src="assets/img/auth.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>АВТОРИЗАЦИЯ</p>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <button>ВОЙТИ</button>
+            <div class="rememberForget">
+                <div>
+                    <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+            </div>
+        </div>
+    </div>
+    <div id="email">
+        <div id="emailWrap">
+            <img src="assets/img/email.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>НАПИСАТЬ СООБЩЕНИЕ</p>
+            <input type="email" placeholder="Ваш E-mail" />
+            <input type="text" placeholder="Ваше имя" />
+            <input type="text" placeholder="Тема сообщения" />
+            <input type="text" placeholder="Текст сообщения" />
+            <button>ОТПРАВИТЬ</button>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logoWrapBars">
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+                    <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+                </div>
+                <div class="barsWrap">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="btnWrap">
+                <button>ВОЙТИ</button>
+                <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="catalog.html">Каталог компаний</a></li>
+                <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+                <li><a href="application.html">Заявки</a></li>
+                <li><a href="private-ads.html">Частные объявления</a></li>
+                <li><a href="analytics.html">Аналитика</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="content">
+            
+            <main>
+                
+                <section id="contact">
+                    <div class="contact-container _container">
+                        <div class="contact-content">
+                            <div class="contact-box">
+                                <div class="contact-row">
+                                    <div class="contact-item">
+                                        <div class="phone-row">
+                                            <div class="phone-item">
+                                                <h1>КОНТАКТЫ</h1>
+                                            </div>
+                                            <div class="phone-item">
+                                                <p>Наш контактный телефон:</p>
+                                            </div>
+                                            <div class="phone-item">
+                                                <img src="assets/ico/phone.png" alt="">
+                                                <a id="phoneNumber" href="tel:+7 (992) 519-07-00;">+7 (992) 519-07-00</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="email-row">
+                                            <div class="email-item">
+                                                <div class="email-img">
+                                                    <a href="#">
+                                                        <img src="assets/ico/telegram.png" alt="telegram">
+                                                    </a>
+                                                </div>
+                                                <div class="email-img">
+                                                    <a href="#">
+                                                        <img src="assets/ico/viber.png" alt="viber">
+                                                    </a>
+                                                </div>
+                                                <div class="email-img">
+                                                    <a href="#"> 
+                                                        <img src="assets/ico/whatsapp.png" alt="whatsapp">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="email-item">
+                                                <button id="emailBtn">
+                                                    <img src="assets/ico/envelope.svg" alt="sms">
+                                                    <p>НАПИСАТЬ ПИСЬМО</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>С условиями размещения рекламы <br>
+                                                Вы можете ознакомиться <a id="here" href="#">здесь</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+                    <div>
+                        <p>© 2009-2022 Труба24.ру</p>
+                        <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+                    </div>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="about.html">О КОМПАНИИ</a></li>
+                        <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div>
+                        <div>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="scripts/script.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

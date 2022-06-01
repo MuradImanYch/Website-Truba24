@@ -1,0 +1,1079 @@
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+header {
+    height: 240px;
+    border-bottom: 1px solid #E4E4E4;
+}
+header .container {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .logoText {
+    display: flex;
+    align-items: center;
+}
+header .logoText img {
+    width: 43.67px;
+    height: 43.67px;
+}
+header .logoText p {
+    width: 116.24px;
+    line-height: 12.38px;
+    color: #2E344B;
+    margin: 0 0 0 15px;
+    font-family: Montserrat;
+    font-size: 0.57em;
+}
+header .logoWrapBars {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+header .btnWrap {
+    display: flex;
+}
+header .btnWrap button {
+    border: 0;
+    height: 66px;
+    cursor: pointer;
+    font-size: 0.58em;
+    height: 41.25px;
+    font-family: Montserrat;
+}
+header .btnWrap button:nth-child(1) {
+    background: #1D5DB5;
+    color: #fff;
+}
+header .btnWrap button:nth-child(1):hover {
+    transition: 0.4s;
+    background: #236cd3;
+}
+.latest-product>span { 
+    font-size: 0.8em !important;
+    width: 500px;
+    font-family: Montserrat !important;
+    font-weight: 600 !important;
+    background: linear-gradient(269.96deg, #2E344B 0.05%, #2E344B 47.93%, #2E344B 99.97%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+header .btnWrap button:nth-child(2) {
+    border: 1px solid #1D5DB5;
+    color: #1D5DB5;
+    background: #fff;
+}
+header .btnWrap button:nth-child(2):hover {
+    transition: 0.4s;
+    background: rgb(241, 241, 241);
+}
+header .barsWrap .bar1, header .barsWrap .bar2, header .barsWrap .bar3  {
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+#introduction {
+    background: #F6F6F6;
+}
+#introduction .container {
+    width: 90%;
+    margin: auto;
+    padding: 70px 0;
+}   
+#introduction .container h1 {
+    font-family: RFDewiExpanded;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+#introduction .container p {
+    text-align: center;
+    margin: 50px 0;
+    color: #2E344B;
+    line-height: 24px;
+}
+#introduction .container p span {
+    font-weight: bold;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button {
+    width: 100%;
+    border: 0;
+    background: #EB5829;
+    color: #fff;
+    height: 70px;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button:hover {
+    transition: 0.4s;
+    background: #f36738;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) {
+    margin: 70px 0 0 0;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) .img {
+    position: relative;
+}
+#bottom {
+    margin: 70px 0 0 0;
+    background: #F6F6F6;
+    padding: 0 0 70px 0;
+    overflow: hidden;
+}
+#bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bottom .img {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+#bottom .img div {
+    position: absolute;
+}
+#bottom .img div p {
+    color: #2E344B;
+    font-family: Montserrat;
+    font-size: 0.75em;
+}
+#bottom .img div img {
+    transform: scaleX(-1);
+    margin: 0 0 10px 0;
+}
+#bottom .img div:nth-child(2) {
+    top: 170px;
+}
+#bottom .img div:nth-child(3) {
+    top: 450px;
+}
+footer {
+    background: #0B3164;
+    padding: 70px 0;
+    margin: 0 !important;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+}
+footer .container div:nth-child(1) .logoText {
+    display: flex;
+}
+footer .container div:nth-child(1) .logoText img {
+    width: 90px;
+    height: 80px;
+}
+footer .container div:nth-child(1) .logoText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 0 0 0 30px;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.8em;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 15px;
+}
+footer .container div:nth-child(1) .links {
+    margin: 40px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .container div:nth-child(1) .links ul li {
+    margin: 20px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul li a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    font-family: Montserrat;
+}
+footer .container div:nth-child(1) .links > div div a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 20px 0 0 0;
+    opacity: 0.5;
+}
+footer .container div:nth-child(1) .links > div div a:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+footer .container div .links > div {
+    margin: 70px 0 0 0;
+}
+footer .container div .links > div div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container div .links > div div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+  }
+  nav .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+  }
+  nav .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 0.9em;
+    padding: 0 !important;
+  }
+  nav .container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  nav .container ul li {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .container ul li:nth-child(1) .catalogSubMenu li a {
+    font-size: 0.75em;
+    font-family: Montserrat;
+    font-style: italic;
+  }
+  nav .container ul li div {
+    display: flex;
+  }
+  nav .container ul li div div {
+    margin: 0 0 0 30px;
+    border: 1px solid #1A3286;
+    padding: 6px 4px 3px 4px;
+    font-size: 0.9em;
+  }
+  nav .container ul li:nth-child(1) .catalogSubMenu {
+    background-color: #FCFCFC;
+    padding: 10px 30px 40px 30px;
+    margin: 20px 0 0 0;
+    display: none;
+    position: static;
+}
+#auth {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    z-index: 2022;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+#auth div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#auth div img {
+    width: 80%;
+    margin: 100px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 60px;
+}
+#auth div p:nth-child(3) {
+    position: absolute;
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#auth div input:nth-child(4) {
+    position: absolute;
+    margin: 100px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+#auth div input:nth-child(5) {
+    position: absolute;
+    margin: 150px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+.card-request-call.catalog>button:after {
+    left: 10%;
+    width: 10px;
+    height: 10px;
+}
+
+@media (min-width: 280px) {
+    header .btnWrap button:nth-child(1) {
+        width: 100px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 150px;
+    }
+    #introduction .img {
+        background: url('../assets/img/pc.png') center/contain no-repeat !important;
+        width: 100%;
+        height: 200px;
+    }
+    #bottom .img div img {
+        width: 40px;
+        height: 40px;
+    }
+    #bottom .img div {
+        width: 30%;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 0.7em;
+        margin: 40px 0 0 0;
+    }
+    #auth div button {
+        width: 155px;
+        border: 0;
+        background: #EB5829;
+        color: #fff;
+        height: 30px;
+        margin: 220px 0 0 0;
+        cursor: pointer;
+        font-family: RFDewiExpanded;
+        font-size: 0.5em;
+        position: absolute;
+    }
+    #auth div button:hover {
+        transition: 0.4s;
+        background: #f36738;
+    }
+    #auth div .rememberForget {
+        position: absolute;
+        margin: 300px 0 0 0;
+        flex-direction: row;
+        font-size: 0.8em;
+        justify-content: space-between;
+        width: 65%;
+    }
+    #auth div .rememberForget div {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+    }
+    #auth div .rememberForget div input {
+        width: 14px;
+        height: 14px;
+    }
+    #auth div .rememberForget div label {
+        padding: 3px 0 0 5px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+    #auth div .rememberForget a {
+        padding: 7px 0 0 0;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+    }
+}
+
+
+@media (min-width: 320px) {
+
+}
+
+
+@media (min-width: 360px) {
+    header .btnWrap button:nth-child(1) {
+        width: 128.12px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 171.88px;
+    }
+    header .logoText p { 
+        font-size: 0.65em;
+        width: 130px;
+    }
+    #bottom .img div {
+        width: 40%;
+    }
+    #bottom .img div img {
+        width: 60px;
+        height: 60px;
+    }
+    #bottom .img div p {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (min-width: 375px) {
+    #auth div p:nth-child(3) {
+        font-size: 1em;
+        margin: 0;
+    }
+    #auth div .rememberForget {
+        width: 58%;
+    }   
+}
+
+@media (min-width: 390px) {
+    #auth div img:nth-child(2) {
+        top: 16px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 412px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 55px;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 1em;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 45%;
+    }
+    #auth div input:nth-child(5) {
+        margin: 160px 0 0 0;
+        width: 45%;
+    }
+    #auth div button {
+        margin: 250px 0 0 0;
+        height: 40px;
+        width: 45%;
+    }
+    #auth div .rememberForget {
+        margin: 350px 0 0 0;
+    }
+}
+
+
+@media (min-width: 540px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 75px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.4em;
+        margin: -50px 0 0 0;
+    }
+    #auth div .rememberForget {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    header .logoWrapBars { 
+        justify-content: space-around;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 150px;
+    }
+    #auth div img {
+        width: 400px;
+        height: 450px;
+    }
+    #auth div img:nth-child(2) {
+        top: 18px;
+        left: 240px;
+        width: 120px;
+        height: 120px;
+    }
+    #auth div input:nth-child(4) {
+        width: 30%;
+    }
+    #auth div input:nth-child(5) {
+        width: 30%;
+        margin: 170px 0 0 0;
+    }
+    #auth div button {
+        width: 30%;
+        margin: 300px 0 0 0;
+    }
+    #auth div .rememberForget {
+        margin: 420px 0 0 0;
+        width: 33%;
+    }
+}
+
+
+@media (min-width: 820px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 170px;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 280px;
+    }
+}
+
+
+@media (min-width: 912px) {
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 200px;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 320px;
+    }
+}
+
+.catalog-nav-menu-list ul li {
+    background: #fff;
+}
+
+@media (min-width: 1024px) {
+    /* .catalog-memu-container {
+        position: relative;
+    }
+    .catalog-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+    } */
+    header {
+        height: 170px;
+    }
+    header .barsWrap {
+        display: none;
+    }
+    header .container {
+        width: 1000px;
+        flex-direction: row;
+    }
+    header .logoWrapBars { 
+        display: block;
+    }
+    header .logoText img {
+        width: 85.7px;
+        height: 85.7px;
+    }
+    header .logoText p { 
+        font-size: 0.9em;
+        width: 180px;
+        line-height: 24.3px;
+        margin: 0 0 0 40px;
+    }
+    header .btnWrap button {
+        font-size: 0.8em;
+        height: 50px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 155px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 225px;
+    }
+    #introduction .container {
+        width: 1000px;
+        padding: 120px 0 0 0;
+    }
+    #introduction .container div:nth-child(1) > div:nth-child(1) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #introduction .container div:nth-child(1) > div:nth-child(1) button {
+        width: 300px;
+    }
+    #introduction .img {
+        width: 500px;
+        height: 500px;
+    }
+    #introduction .container div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+    }
+    #introduction .container h1 {
+        line-height: 65px !important;
+        font-size: 3em !important;
+        text-align: left;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) {
+        margin: 0;
+    }
+    #introduction {
+        min-height: 668px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 210px 0;
+    }
+    #introduction .container p {
+        text-align: left;
+        width: 390px;
+    }
+    #bottom { 
+        margin: 120px 0 0 0;
+        padding: 0;
+        max-height: 600px;
+        overflow: hidden;
+    }
+    #bottom .img {
+        margin: -190px 0 0 0;
+    }
+    #bottom .img img {
+        width: 1000px;
+    }
+    #bottom .img div:nth-child(2) {
+        top: 280px;
+    }
+    #bottom .img div:nth-child(3) {
+        top: 520px;
+    }
+    #bottom .container {
+        width: 1000px;
+        margin: auto;
+        position: relative;
+    }
+    #bottom .img div {
+        width: 58%;
+    }
+    #bottom .img div p {
+        font-size: 0.9em;
+        line-height: 17px;
+    }
+   
+    footer .container {
+        width: 1000px;
+    }
+    footer .container div {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container div:nth-child(1) .links {
+        margin: 0;
+        flex-direction: column;
+        width: 600px;
+        margin: -10px 0 0 0;
+    }
+    footer .container div:nth-child(1) .links > div div {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container div:nth-child(1) .links > div div a {
+        margin: 15px 0 0 0;
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links > div {
+       padding: 0 15px 20px 15px;
+       justify-content: center;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.7em;
+        line-height: 18px;
+    }
+    footer .container div:nth-child(1) .logoText img {
+        width: 130px;
+        height: 130px;
+    }
+    footer .container div:nth-child(1) .logoText div {
+        justify-content: space-around;
+        padding: 0 0 0 10px;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    footer .container div .links > div {
+        margin: 0;
+    }
+    nav {
+        height: 70px;
+        position: static;
+        padding: 0;
+        display: block;
+    }
+    nav .container {
+        width: 1000px;
+        height: 100%;
+    }
+    nav .container ul {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    nav .container ul li {
+        position: relative;
+        margin: 0;
+        height: 100%;
+        display: block;
+    }
+    nav .container ul li a:not(nav .container ul li:nth-child(1) .catalogSubMenu li a) {
+        position: relative;
+    }
+    nav .container ul li a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #1D5DB5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    nav .container ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    nav .container ul li div {
+        height: 100%;
+      }
+      nav .container ul li div div {
+        display: none;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        flex-direction: column;
+        height: auto;
+        margin: 5px 0 0 0;
+        width: 190px;
+        padding: 5px 20px;
+      }
+      nav .container ul li:nth-child(1):hover  .catalogSubMenu {
+        display: block;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li {
+        margin: 10px 0 0 0;
+        padding: 5px 0;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li a:hover {
+        color: #1e4379;
+        padding: 0 0 0 5px !important;
+        transition: 0.2s;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li a::after {
+        height: 0;
+      }
+      #auth div img {
+        width: 450px;
+        height: 500px;
+        margin: 70px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.8em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        height: 60px;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 24%;
+        font-size: 1em;
+    }
+    #auth div .rememberForget div input {
+        width: 20px;
+        height: 20px;
+    }
+    .latest-product>span {
+        font-size: 1em !important;
+    }   
+}
+
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 515px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        font-size: 1em;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 25%;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1680px) {
+    header .container {
+        width: 1200px;
+    }
+    header .btnWrap button {
+        font-size: 0.93em;
+        height: 66px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 205px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 275px;
+    }
+    header .logoText p { 
+        font-size: 1.125em;
+        width: 230px;
+    }
+    #introduction .container {
+        width: 1200px;
+    }
+    #introduction .container h1 {
+        font-size: 4em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 190px 0
+    }
+    #introduction .img {
+        width: 550px;
+        height: 550px;
+    }
+    #introduction {
+        min-height: 730px;
+    }
+    footer .container {
+        width: 1200px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.9em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links {
+        width: 700px;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .links > div {
+        padding: 0 26px 20px 26px;
+    }
+    nav .container {
+        width: 1200px;
+    }
+    #auth div img {
+        width: 600px;
+        height: 680px;
+        margin: 130px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 795px;
+        width: 200px;
+        height: 200px;
+    }
+    #auth div input:nth-child(5) {
+        margin: 220px 0 0 0;
+    }
+    #auth div button {
+        margin: 380px 0 0 0;
+        height: 80px;
+    }
+    #auth div .rememberForget {
+        margin: 580px 0 0 0;
+        width: 24%;
+    }
+}
+
+
+
+@media (max-width:1020px) {
+    .manufacturer-description.catalog>span:nth-child(1):before {
+        left: -8%;
+    }
+    .manufacturer-description.catalog>span:nth-child(2):before {
+        left: -10%;
+    }
+    .manufacturer-description.catalog>span:nth-child(3):before {
+        left: -9%;
+        display: block;
+    }
+    .product-card-description.catalog>p{
+        font-size: 12px;
+
+    }
+    .card-request-call.catalog>button{
+     font-size: 8px!important;
+    }
+    .card-request-call.catalog>button {
+    font-size: 8px!important;
+}
+.favorites-btn-wrap.catalog>button{
+    font-size: 8px!important;
+}
+
+}
+
+@media (max-width:880px) {
+     .card-request-call.catalog>button:after{
+     left: 4%;
+    }
+
+}
+
+@media (max-width:850px) {
+     .card-request-call.catalog>button:after{
+     left:20%;
+    }
+     .product-card-description.catalog>p{
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (max-width:650px) {
+     .card-request-call.catalog>button:after{
+     left:10%;
+     top: 35%;
+    }
+    .product-card-description.catalog>p{
+        font-size: 8px;
+
+    }
+    .product-card-description.catalog>span{
+        font-size: 8px;
+
+    }
+     .manufacturer-description.catalog>span:nth-child(1):before {
+        left: -10%;
+    }
+    .manufacturer-description.catalog>span:nth-child(2):before {
+        left: -12%;
+    }
+    .manufacturer-description.catalog>span:nth-child(3):before {
+        left: -11%;
+        display: block;
+    }
+}
+
+
+@media (max-width:550px) {
+    .card-request-call.catalog>button:after{
+     display: none;
+    }
+    .manufacturer-description.catalog {
+        line-height:27px;
+    }
+    .latest-product>span {
+        width: 90%;
+    font-size: 0.7em !important;
+    }
+
+}

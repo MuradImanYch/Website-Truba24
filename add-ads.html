@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портал металлопроката : продажа-покупка проката, трубы, арматуры, метизов на Труба24.ру</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/catalog-price.css">
+  <link rel="stylesheet" href="styles/application-catalog.css">
+  <link rel="stylesheet" href="styles/add-ads.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="auth">
+    <div id="authWrap">
+        <img src="assets/img/auth.png" alt="auth">
+        <img src="assets/img/authImg.png" alt="authImg">
+        <p>АВТОРИЗАЦИЯ</p>
+        <input type="text" placeholder="E-mail" />
+        <input type="password" placeholder="Пароль" />
+        <button>ВОЙТИ</button>
+        <div class="rememberForget">
+            <div>
+                <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+            </div>
+            <a href="#">Забыли пароль</a>
+        </div>
+    </div>
+</div>
+  <header>
+    <div class="container">
+      <div class="logoWrapBars">
+        <div class="logoText">
+          <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+          <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+        </div>
+        <div class="barsWrap">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="btnWrap">
+        <button>ВОЙТИ</button>
+        <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+        <ul>
+            <li>
+                <div>
+                    <a href="catalog.html">Каталог компаний</a>
+                    <div>▼</div>
+                </div>
+                <ul class="catalogSubMenu">
+                    <li><a href="#">ГЛАВНАЯ — </a></li>
+                    <li><a href="#">ЧАСТНЫЕ ОБЪЯВЛЕНИЯ</a></li>
+                </ul>
+            </li>
+            <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+            <li><a href="application.html">Заявки</a></li>
+            <li><a href="private-ads.html">Частные объявления</a></li>
+            <li><a href="analytics.html">Аналитика</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <div class="container">
+    <section class="add-ads-section">
+      <div class="block-sell-buy-wrap">
+        <div class="block-sell-buy-item">
+          <div class="sell-buy-title">
+            <h1>ДОБАВИТЬ ОБЪЯВЛЕНИЕ О ПОКУПКЕ ИЛИ ПРОДАЖЕ МЕТАЛЛОПРОКАТА</h1>
+          </div>
+          <div class="sell-buy-text">
+            <span>ВЫБЕРИТЕ РАЗДЕЛ</span>
+            <span class="arrow-sell"></span>
+          </div>
+        </div>
+        <div class="block-sell-buy-item btn">
+          <div class="sell-buy-item-btn-buy">
+            <button>ХОЧУ КУПИТЬ</button>
+          </div>
+          <div class="sell-buy-item-btn-sell">
+            <button>ХОЧУ ПРОДАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="contaner-add-ads">
+        <div class="ads-choose-category-wrap">
+          <div class="ads-choose-category-item">
+            <div class="choose-category">
+              <span>Выберите категорию</span>
+              <li>
+                <ul>
+                  <li></li>
+                </ul>
+            </div>
+            <div class="choose-category">
+              <span>Выберите подкатегорию</span>
+              <li>
+                <ul>
+                  <li></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="ads-choose-category-item company">
+            <input type="text" name="add-ads-company" placeholder="Компания">
+            <ul>
+              <li>ООО</li>
+            </ul>
+          </div>
+          <div class="ads-choose-category-item name">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="city" placeholder="Город">
+          </div>
+          <div class="ads-choose-category-item phone">
+            <input type="text" name="phone" placeholder="Телефон">
+            <input type="text" name="additional" placeholder="Добавочный">
+          </div>
+          <div class="ads-choose-category-item email">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input type="text" name="website" placeholder="Сайт">
+          </div>
+          <div class="ads-choose-category-item ads-name">
+            <input type="text" name="name-company" placeholder="Название объявления">
+          </div>
+          <div class="ads-choose-category-item text">
+            <div class="review-text">
+              <img src="/assets/img_add_ads/add-ads-bottom.png" alt="">
+            </div>
+            <div class="add-ads-img-wrap">
+              <div class="add-ads-img-title">
+                <span>Добавить фото</span>
+                <div class="add-ads-img">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="ads-choose-category-item term">
+            <div class="ads-term-block">
+              <span>Срок размещения</span>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <div class="ads-choose-service-block">
+              <span>Выберите пакет услуг</span>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="add-ads-bottom-wraper">
+        <div class="add-ads-bottom-item">
+          <div class="ads-bottom-title">
+            <h2>В 10 РАЗ БОЛЬШЕ ПРОСМОТРОВ ВАШЕГО ОБЪЯВЛЕНИЯ!</h2>
+          </div>
+          <div class="ads-bottom-desk-block">
+            <div class="ads-bottom-desk-block-text">
+              <p>Благодаря пакету PREMIUM к вашему объявлению будут применены все дополнительные услуги Truba24.ru. Вы продадите металлопрокат максимально быстро</p>
+            </div>
+            <div class="ads-bottom-desk-block-list">
+              <div class="desk-block-list-item"><img src="/assets/img_add_ads/add-ads-star.svg" alt="">
+                <p>Объявление будет показываться в верхней части страниц поиска</p>
+              </div>
+              <div class="desk-block-list-item"><img src="/assets/img_add_ads/add-ads-bloknote.svg" alt="">
+                <p>Объявление будет выделено в поиске цветом</p>
+              </div>
+              <div class="desk-block-list-item"><img src="/assets/img_add_ads/add-ads-rupor.svg" alt="">
+                <p>Объявление будет показываться в блоке похожие объявления</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="add-ads-bottom-item img">
+          <div class="ads-bottom-img">
+            <img src="assets/img/sale-application-rigt-img.svg" alt="">
+          </div>
+          <div class="ads-bottom-captcha">
+            <div class="code-picture">
+              <span>Введите код с картинки</span>
+              <div class="img-captcha"></div>
+            </div>
+            <div class="code-picture-input">
+              <input type="text" name="img-captcha-input">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="add-ads-bottom-btn">
+        <button>ДОБАВИТЬ ОБЪЯВЛЕНИЕ</button>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <div>
+        <div class="logoText">
+          <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+          <div>
+            <p>© 2009-2022 Труба24.ру</p>
+            <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+          </div>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="about.html">О КОМПАНИИ</a></li>
+            <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+            <li><a href="services.html">УСЛУГИ</a></li>
+            <li><a href="clients.html">КЛИЕНТЫ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <div>
+            <div>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

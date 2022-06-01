@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;500;700;800&family=Montserrat:wght@300;400;700;800&display=swap');
+
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+.catalog-menu-product-wrap.price-list {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+nav {
+	z-index: 99;
+}
+.logoWrapBars.price-list  {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#introduction {
+    margin: 0 0 150px 0;
+}
+
+.product-card-btn.price-list {
+	width: 30%;
+}
+.price-list-btn {
+	max-width: 238px;
+	width: 100%;
+}
+.card-request-call.price-list>button {
+	font-size: 8px;
+}
+.card-request-call.price-list>button:after{
+	left: 14%;
+	font-size: 8px;
+}
+.card-deskription-item.prise-list {
+   justify-content: flex-start;
+}
+.card-deskription-item.prise-list>span{
+	width: 100%;
+}
+
+.manufacturer-description-tel::before{
+	left: -8%!important;
+}
+.container-ad-wrap.price-list {
+	    width: 96.5%;
+}
+
+
+
+@media(max-width: 1680px) {
+.price-list-btn {
+	max-width: 200px;	
+}
+
+}
+
+
+@media(max-width: 980px) {
+	.card-request-call.price-list>button:after{
+	left: 8%;
+	font-size: 8px;
+}
+	.favorites-btn-wrap>button:nth-child(1) {
+		font-size: 7px!important;
+	}
+	.favorites-btn-wrap>button:nth-child(2) {
+		font-size: 7px!important;
+	}
+	.favorites-btn-wrap>button:nth-child(3) {
+		font-size: 7px!important;
+	}
+	.sale-application-title.price-list {
+    height: auto;
+}
+.sale-application-text-left.price-list {
+	width: 70%;
+	height: auto;
+	margin:0;
+}
+.card-deskription-item.prise-list>span{
+	width: 100%;
+}
+.card-deskription-item>span:nth-child(2):after {
+    top: 3px;
+    left: 15px!important;
+}
+.manufacturer-description.price-list>span:nth-child(1):before {
+    left: -8%;
+}
+}
+
+@media(max-width: 780px) {
+	.card-request-call.price-list>button:after{
+	font-size: 8px;
+	 left: 8%;
+}
+.card-request-call.price-list>button {
+    font-size: 7px;
+}
+}
+@media(max-width: 650px) {
+	.card-request-call.price-list>button:after{
+	left: 6%;
+	font-size: 6px;
+}
+.card-request-call.price-list>button {
+    font-size: 6px;
+}
+}
+
+@media(max-width: 580px) {
+.card-request-call.price-list>button:after{
+	display: none;
+}
+}
+
+
+@media(max-width: 450px) {
+	.product-card-btn.price-list {
+	width: 90%;
+ }
+
+.sale-application-text-left.price-list {
+	max-width: 80%;
+	width: 100%;
+	margin:0;
+}
+
+.sale-application-text-left.price-list>p{
+	width: 100%;
+}
+.manufacturer-description.price-list {
+	width: 72%;
+}
+.manufacturer-description.price-list>span>a:nth-child(1) {
+    color: #333333;
+    font-size: 8px;
+}
+.manufacturer-description.price-list>span:nth-child(2):before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 34%;
+    left: -15.5%;
+}
+
+}

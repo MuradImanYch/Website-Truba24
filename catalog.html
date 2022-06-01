@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/catalog-price.css">
+     <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="auth">
+        <div id="authWrap">
+            <img src="assets/img/auth.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>АВТОРИЗАЦИЯ</p>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <button>ВОЙТИ</button>
+            <div class="rememberForget">
+                <div>
+                    <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logoWrapBars">
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+                    <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+                </div>
+                <div class="barsWrap">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="btnWrap">
+                <button>ВОЙТИ</button>
+                <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <div>
+                        <a href="catalog.html">Каталог компаний</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="catalogSubMenu">
+                        <li><a href="#">ГЛАВНАЯ — </a></li>
+                        <li><a href="#">КАТАЛОГ КОМПАНИЙ</a></li>
+                    </ul>
+                </li>
+                <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+                <li><a href="application.html">Заявки</a></li>
+                <li><a href="private-ads.html">Частные объявления</a></li>
+                <li><a href="analytics.html">Аналитика</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="introduction">
+        <div class="container">
+            <div>
+                <div>
+                    <h1>КАТАЛОГ КОМПАНИЙ</h1>
+                    <p><span>Нажмите на кнопку и подберите под свой бизнес подходящие компании,</span> которые поставляют и производят трубы самого разного сегмента: от металлопластиковых до бетонных</p>
+                    <button>ИЗУЧИТЬ КАТАЛОГ</button>
+                </div>
+                <div>
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<section>
+    <div class="container">
+        <div class="goods-section">
+            <div class="country-section"><span>РОСИИЯ</span></div>
+            <div class="latest-product"><span>На сайте зарегистрировано 575 компаний</span></div>
+            <div class="sort-by-product"><span>СОРТИРОВАТЬ ПО</span></div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+      <div class="catalog-memu-container">
+          <div class="catalog-memu-wrap">
+             <div class="card-burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+              <div class="catalog-menu">
+                        <div class="catalog-nav-menu">
+                            <div class="catalog-nav-menu-list">
+                         <ul>
+                             <li><span class="sub-menu-pipe">Трубы</span>
+                                <ul class="catalog-nav-menu-submenu pipe">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                               <li><span class="sub-menu-shut-valves" >Запорная арматура</span>
+                                <ul class="catalog-nav-menu-submenu shut-valves">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                              <li><span class="sub-menu-col-metal" >Цветные металлы</span>
+                                <ul class="catalog-nav-menu-submenu col-metal">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                             <li><span class="sub-menu-metal" >Листовой прокат</span>
+                                <ul class="catalog-nav-menu-submenu metal">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                              <li><span class="sub-menu-ferrous-metal" >Цветные металлы</span>
+                                <ul class="catalog-nav-menu-submenu ferrous-metal">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                              <li><span class="sub-menu-hardware-fasteners" >Метизы и крепеж</span>
+                                <ul class="catalog-nav-menu-submenu hardware-fasteners">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                             <li><span class="sub-menu-scrap" >Лом, отход, сырье</span>
+                                <ul class="catalog-nav-menu-submenu scrap">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                              <li><span class="sub-menu-metal-products">Прочая металлопродукция</span>
+                                <ul class="catalog-nav-menu-submenu metal-products">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                             <li><span class="sub-menu-equipment-tools">Оборудование и инструмент</span>
+                                <ul class="catalog-nav-menu-submenu equipment-tools">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                              <li><span class="sub-menu-services">Услуги</span>
+                                <ul class="catalog-nav-menu-submenu services">
+                                 <li><a href="#">Арматура</a></li>
+                                 <li><a href="#">Балка двутавровая</a></li>
+                                 <li><a href="#">Катанка</a></li>
+                                 <li><a href="#">Квадрат</a></li>
+                                 <li><a href="#">Круг</a></li>
+                                </ul>
+                             </li>
+                           
+                        </ul>
+
+                         </div>
+                        </div>
+              </div>
+             
+              <div class="catalog-menu-product-wrap">
+                 <div class="catalog-menu-product">
+                    <div class="product-card premium">
+                            <div class="product-card-logo"><img src="./assets/img_catalog/product-card-logo.png" alt="card-logo1"></div>
+                        <div class="product-card-description catalog">
+                            <p>Продажа Труба новая ГОСТ 8732</p>
+                            <span>134000₽ за тн.</span>
+                            <div class="card-deskription-item">
+                                <span>05 июля, 2015</span>
+                                <span>257</span> 
+                                <span>Размер: 325х8</span>
+                            </div>
+                        </div>
+                        <div class="manufacturer-name-wrap">
+                            <div class="manufacturer-title">
+                                <span>ООО “ТРУБАСЕЙЛ” </span>
+                            </div>
+                            <div class="manufacturer-description catalog">
+                                <span>Вне сети</span>
+                                <span>Москва</span>
+                                <span><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+                            </div>
+                        </div>
+                            <div class="product-card-btn">
+                                <div class="favorites-btn-wrap catalog">
+                                    <button>ИЗБРАННОЕ</button>
+                                     <button>КУПИТЬ</button>
+                                </div>
+                                <div class="card-request-call catalog">
+                                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <div class="container-ad-wrap">
+                        <span>МЕСТО ДЛЯ ОБЪЯВЛЕНИЯ</span>
+                  </div>
+
+                     <div class="product-card">
+                        
+                            <div class="product-card-logo"><img src="./assets/img_catalog/product-card-logo.png" alt="card-logo1"></div>
+                      
+                        <div class="product-card-description catalog">
+                            <p>Продажа Труба новая ГОСТ 8732</p>
+                            <span>134000₽ за тн.</span>
+                            <div class="card-deskription-item">
+                                <span>05 июля, 2015</span>
+                                <span>257</span> 
+                                <span>Размер: 325х8</span>
+                            </div>
+                        </div>
+                        <div class="manufacturer-name-wrap">
+                            <div class="manufacturer-title">
+                                <span>ООО “ТРУБАСЕЙЛ” </span>
+                            </div>
+                            <div class="manufacturer-description catalog">
+                                <span>Вне сети</span>
+                                <span>Москва</span>
+                                <span><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+                            </div>
+                        </div>
+                            <div class="product-card-btn">
+                                <div class="favorites-btn-wrap catalog">
+                                    <button>ИЗБРАННОЕ</button>
+                                     <button>КУПИТЬ</button>
+                                </div>
+                                <div class="card-request-call catalog">
+                                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                                </div>
+                            </div>    
+                    </div>
+
+                     <div class="product-card">
+                        
+                            <div class="product-card-logo"><img src="./assets/img_catalog/product-card-logo.png" alt="card-logo1"></div>
+               
+                        <div class="product-card-description catalog">
+                            <p>Продажа Труба новая ГОСТ 8732</p>
+                            <span>134000₽ за тн.</span>
+                            <div class="card-deskription-item">
+                                <span>05 июля, 2015</span>
+                                <span>257</span> 
+                                <span>Размер: 325х8</span>
+                            </div>
+                        </div>
+                        <div class="manufacturer-name-wrap">
+                            <div class="manufacturer-title">
+                                <span>ООО “ТРУБАСЕЙЛ” </span>
+                            </div>
+                            <div class="manufacturer-description catalog">
+                                <span>Вне сети</span>
+                                <span>Москва</span>
+                                <span><a href="tel:8495203898">8 (495) 2 03-89-87</a></span>
+                            </div>
+                        </div>
+                            <div class="product-card-btn">
+                                <div class="favorites-btn-wrap catalog">
+                                    <button>ИЗБРАННОЕ</button>
+                                     <button>КУПИТЬ</button>
+                                </div>
+                                <div class="card-request-call catalog">
+                                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                                </div>
+                            </div>    
+                    </div>
+                    <div class="container-ad-wrap">
+                        <span>МЕСТО ДЛЯ ОБЪЯВЛЕНИЯ</span>
+                  </div>
+              
+
+                <div class="manufacturer-show-more">
+                    <span>ПОКАЗАТЬ ЕЩЁ</span>
+                </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+   </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <section id="bottom">
+        <div class="container">
+            <div class="img">
+                <img src="assets/img/main15.png" alt="main15">
+                <div>
+                    <img src="assets/img/main5.png" alt="main5">
+                    <p>Полный каталог компаний, которые поставляют и производят трубы самого разного сегмента: металлопластиковые, медные, стальные, бесшовные, полипропиленовые, бетонные и многие другие, отсортированы в списки по рейтингу и регионам России. Также в бизнес каталоге компаний, представлены поставщики трубной продукции из стран СНГ и др. Практически все компании каталога поставляют продукты трубного проката, трубопроводную и запорно-предохранительную арматуру, детали и сборочные узлы трубопроводов, стальные трубы и мню др</p>
+                </div>
+                <div>
+                    <img src="assets/img/main3.png" alt="main3">
+                    <p>В полноценном каталоге компаний России, которые поставляют трубы для различной сферы использования, нужный объект можно отыскать при помощи «визитной карточки», содержащей информацию о деятельности и контактные данные. Кроме того, в каталоге компаний трубной промышленности могут быть размещены свои новости, номенклатурные данные, прайс-листы, объявления о купле-продаже продукции. Каждый объект из каталога компаний России гарантирует современные поставки, высокое качество продукции, которое отвечает государственным стандартам, и приемлемые цены</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logoText">
+                    <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+                    <div>
+                        <p>© 2009-2022 Труба24.ру</p>
+                        <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+                    </div>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="about.html">О КОМПАНИИ</a></li>
+                        <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div>
+                        <div>
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+      <script src="scripts/menu.js"></script>
+</body>
+</html>

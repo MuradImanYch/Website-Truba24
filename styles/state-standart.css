@@ -1,0 +1,1432 @@
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+
+#auth {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    z-index: 2022;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+#auth div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#auth div img {
+    width: 80%;
+    margin: 100px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 60px;
+}
+#auth div p:nth-child(3) {
+    position: absolute;
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#auth div input:nth-child(4) {
+    position: absolute;
+    margin: 100px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+#auth div input:nth-child(5) {
+    position: absolute;
+    margin: 150px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+header {
+    height: 240px;
+    border-bottom: 1px solid #E4E4E4;
+}
+header .container {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .logoText {
+    display: flex;
+    align-items: center;
+}
+header .logoText img {
+    width: 43.67px;
+    height: 43.67px;
+}
+header .logoText p {
+    width: 116.24px;
+    line-height: 12.38px;
+    color: #2E344B;
+    margin: 0 0 0 15px;
+    font-family: Montserrat;
+    font-size: 0.57em;
+}
+header .logoWrapBars {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+header .btnWrap {
+    display: flex;
+}
+header .btnWrap button {
+    border: 0;
+    height: 66px;
+    cursor: pointer;
+    font-size: 0.58em;
+    height: 41.25px;
+    font-family: Montserrat;
+}
+header .btnWrap button:nth-child(1) {
+    background: #1D5DB5;
+    color: #fff;
+}
+header .btnWrap button:nth-child(1):hover {
+    transition: 0.4s;
+    background: #236cd3;
+}
+header .btnWrap button:nth-child(2) {
+    border: 1px solid #1D5DB5;
+    color: #1D5DB5;
+    background: #fff;
+}
+header .btnWrap button:nth-child(2):hover {
+    transition: 0.4s;
+    background: rgb(241, 241, 241);
+}
+header .barsWrap .bar1, header .barsWrap .bar2, header .barsWrap .bar3  {
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+    z-index: 999;
+  }
+  nav .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+  }
+  nav .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 0.9em;
+    padding: 0;
+    text-align: left;
+  }
+  nav .container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  nav .container ul li {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  nav .container ul li ul {
+    position: static;
+  }
+  nav .container ul li:nth-child(1) .catalogSubMenu li a {
+    font-size: 0.85em;
+    font-family: Montserrat;
+    font-style: italic;
+  }
+  nav .container ul li:nth-child(5) .analiticsSubMenu li a {
+    font-size: 0.9em;
+    font-family: Montserrat;
+    font-style: italic;
+    color: #fff;
+  }
+  nav .container ul li div {
+    display: flex;
+  }
+  nav .container ul li div div {
+    margin: 0 0 0 30px;
+    border: 1px solid #1A3286;
+    padding: 6px 4px 3px 4px;
+    font-size: 0.9em;
+  }
+  nav .container ul li:nth-child(1) .catalogSubMenu {
+    background-color: #FCFCFC;
+    padding: 10px 30px 40px 30px;
+    margin: 20px 0 0 0;
+    display: none;
+  }
+  nav .container ul li:nth-child(5) .analiticsSubMenu {
+    background-color: #1D5DB5;
+    padding: 10px 30px 40px 30px;
+    margin: 20px 0 0 0;
+    display: none;
+  }
+  #introduction .inpWrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+  #introduction .container div:nth-child(1) div:nth-child(1) input {
+      height: 70px;
+      color: #585D6F;
+      width: 150px;
+      padding: 0 0 0 35px;
+      border: 1px solid #1D5DB5;
+      outline: 0;
+  }
+  #introduction .container div:nth-child(1) div:nth-child(1) button {
+    margin: 0;
+    border: 1px solid #1D5DB5;
+    background: #1D5DB5;
+    font-size: 0.6em;
+  }
+  #introduction .container div:nth-child(1) div:nth-child(1) button:hover {
+      transition: 0.4s;
+      background: #296fd1;
+  }
+  #introduction .inpWrap img:nth-child(3) {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 10px;
+  }
+  #introduction .inpWrap img:nth-child(4) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 80px;
+  }
+  .list {
+      width: 90%;
+      margin: auto;
+    }
+    section:nth-child(5) {
+        padding: 100px 0 0 0;
+    }
+  .list .wrap {
+    border: 4px solid #1D5DB5;
+    padding: 40px 70px;
+    margin: 50px 0 0 0;
+  }
+  .list .title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 32px;
+    color: #2E344B;
+    text-align: center;
+  }
+  .list .desc {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2E344B;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.list .info {
+    margin: 40px 0 0 0;
+}
+.list .info p {
+    margin: 20px 0 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+}
+.list .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0 0;
+    position: relative;
+}
+.list .right img {
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+}
+.list .right button {
+    width: 200px;
+    height: 70px;
+    background: #EB5829;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-family: Montserrat;
+    cursor: pointer;
+    padding: 0 0 0 20px;
+}
+.list .right button:hover {
+    transition: 0.4s;
+    background: #ff6e3d;
+}
+.list .right p {
+    margin: 20px 0 0 0;
+    font-size: 0.9em;
+    color: #2E344B;
+    font-family: Montserrat;
+}
+.list .info div {
+    position: relative;
+}
+.list .info div img {
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
+.list .info div:nth-child(2) img {
+    width: 7px;
+    height: 7px;
+}
+.list .info div:nth-child(3) img {
+    width: 12px;
+    height: 12px;
+    left: -5px;
+    top: 5px;
+}
+aside {
+    margin: 50px 0 0 0;
+}
+aside .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+aside .ad {
+    width: 280px;
+    height: 168px;
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E344B;
+}
+.list .container > .buttonWrap {
+    margin: 70px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.list .container > .buttonWrap button {
+    width: 250px;
+    height: 70px;
+    border: 0;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    background: transparent;
+    color: #B3B3B3;
+    font-style: italic;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+#information {
+    margin: 150px 0 0 0;
+  }
+  footer {
+  background: #0B3164;
+  padding: 70px 0;
+  margin: 70px 0 0 0;
+}
+
+footer .container {
+  width: 90%;
+  margin: auto;
+}
+
+footer .container div:nth-child(1) .logoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container div:nth-child(1) .logoText img {
+  width: 90px;
+  height: 80px;
+}
+
+footer .container div:nth-child(1) .logoText div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  padding: 0 0 0 30px;
+}
+
+footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 15px;
+}
+
+footer .container div:nth-child(1) .links {
+  margin: 40px 0 0 0;
+}
+
+footer .container div:nth-child(1) .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container div:nth-child(1) .links ul li {
+  margin: 20px 0 0 0;
+}
+
+footer .container div:nth-child(1) .links ul li a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  font-family: Montserrat;
+}
+
+footer .container div:nth-child(1) .links > div div a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 20px 0 0 0;
+  opacity: 0.5;
+}
+
+footer .container div:nth-child(1) .links > div div a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+footer .container div .links > div {
+  margin: 70px 0 0 0;
+}
+
+footer .container div .links > div div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container div .links > div div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 0 0 0;
+}
+
+
+@media (min-width: 280px) {
+    #auth div p:nth-child(3) {
+        font-size: 0.7em;
+        margin: 40px 0 0 0;
+    }
+    #auth div button {
+        width: 155px;
+        border: 0;
+        background: #EB5829;
+        color: #fff;
+        height: 30px;
+        margin: 220px 0 0 0;
+        cursor: pointer;
+        font-family: RFDewiExpanded;
+        font-size: 0.5em;
+        position: absolute;
+    }
+    #auth div button:hover {
+        transition: 0.4s;
+        background: #f36738;
+    }
+    #auth div .rememberForget {
+        position: absolute;
+        margin: 300px 0 0 0;
+        flex-direction: row;
+        font-size: 0.8em;
+        justify-content: space-between;
+        width: 65%;
+    }
+    #auth div .rememberForget div {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+    }
+    #auth div .rememberForget div input {
+        width: 14px;
+        height: 14px;
+    }
+    #auth div .rememberForget div label {
+        padding: 3px 0 0 5px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+    #auth div .rememberForget a {
+        padding: 7px 0 0 0;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 100px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 150px;
+    }
+    #introduction h1 {
+		font-size: 1.5em;
+	}
+}
+
+
+@media (min-width: 320px) {
+    #introduction .inpWrap img:nth-child(4) {
+        right: 105px;
+    }
+    .list .right img {
+        left: 0;
+    }
+    .list .info div img {
+        left: -10px;
+    }
+}
+
+
+@media (min-width: 360px) {
+    header .btnWrap button:nth-child(1) {
+        width: 128.12px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 171.88px;
+    }
+    header .logoText p { 
+        font-size: 0.65em;
+        width: 130px;
+    }
+    #introduction .inpWrap img:nth-child(4) {
+        right: 130px;
+        width: 22px;
+        height: 22px;
+    }
+    .list .desc {
+        font-size: 15px;
+    }
+    .list .right img {
+        left: 25px;
+    }
+    .list .info div img {
+        left: 6px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 10px;
+    }   
+}
+
+
+@media (min-width: 375px) {
+    #auth div p:nth-child(3) {
+        font-size: 1em;
+        margin: 0;
+    }
+    #auth div .rememberForget {
+        width: 58%;
+    }   
+    .list .info div img {
+        left: 10px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 18px;
+    }   
+}
+
+
+@media (min-width: 390px) {
+    #auth div img:nth-child(2) {
+        top: 16px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 18px;
+    }   
+}
+
+
+@media (min-width: 412px) {
+    #auth div p:nth-child(3) {
+        font-size: 1.2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 45%;
+    }
+    #auth div input:nth-child(5) {
+        margin: 160px 0 0 0;
+        width: 45%;
+    }
+    #auth div button {
+        margin: 250px 0 0 0;
+        height: 40px;
+        width: 45%;
+    }
+    #auth div .rememberForget {
+        margin: 350px 0 0 0;
+    }
+    #introduction .inpWrap img:nth-child(4) {
+        right: 85px;
+        width: 18px;
+        height: 18px;
+    }
+    .list .right img {
+        left: 45px;
+    }
+    .list .info div img {
+        left: 30px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 35px;
+    }   
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 1em;
+      }
+}  
+
+
+
+@media (min-width: 540px) {
+    #auth div p:nth-child(3) {
+        font-size: 1.4em;
+        margin: -50px 0 0 0;
+    }
+    #auth div .rememberForget {
+        width: 50%;
+    }
+    #introduction .inpWrap img:nth-child(4) {
+        right: 135px;
+        width: 22px;
+        height: 22px;
+    }
+    .list .right img {
+        left: 100px;
+    }
+    .list .info div img {
+        left: 85px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 90px;
+    }   
+}  
+
+
+@media (min-width: 768px) {
+    #auth div img {
+        width: 400px;
+        height: 450px;
+    }
+    #auth div img:nth-child(2) {
+        top: 18px;
+        left: 240px;
+        width: 120px;
+        height: 120px;
+    }
+    #auth div input:nth-child(4) {
+        width: 30%;
+    }
+    #auth div input:nth-child(5) {
+        width: 30%;
+        margin: 170px 0 0 0;
+    }
+    #auth div button {
+        width: 30%;
+        margin: 300px 0 0 0;
+    }
+    #auth div .rememberForget {
+        margin: 420px 0 0 0;
+        width: 33%;
+    }
+    header .logoWrapBars { 
+        justify-content: space-around;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) input {
+        width: 60%;
+        padding: 0 0 0 70px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        width: 40%;
+        padding: 0 0 0 20px;
+    }
+    #introduction .inpWrap img:nth-child(3) {
+        left: 30px;
+    }
+    #introduction .inpWrap img:nth-child(4) {
+        right: 110px;
+    }
+    .list .right img {
+        left: 210px;
+    }
+    .list .info div img {
+        left: 185px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 190px;
+    }   
+}
+
+
+@media (min-width: 820px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 280px;
+    }
+    .list .right img {
+        left: 230px;
+    }
+    .list .info div img {
+        left: 210px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 215px;
+    }   
+}
+
+
+@media (min-width: 912px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 320px;
+    }
+    .list .right img {
+        left: 270px;
+    }
+    .list .info div img {
+        left: 255px;
+    }
+    .list .info div:nth-child(3) img {
+        left: 260px;
+    }   
+}
+
+
+@media (min-width: 1024px) {
+    #auth div img {
+        width: 450px;
+        height: 500px;
+        margin: 70px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.8em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        height: 60px;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 24%;
+        font-size: 1em;
+    }
+    #auth div .rememberForget div input {
+        width: 20px;
+        height: 20px;
+    }
+    header {
+        height: 170px;
+    }
+    header .barsWrap {
+        display: none;
+    }
+    header .container {
+        width: 1000px;
+        flex-direction: row;
+    }
+    header .logoWrapBars { 
+        display: block;
+    }
+    header .logoText img {
+        width: 85.7px;
+        height: 85.7px;
+    }
+    header .logoText p { 
+        font-size: 0.9em;
+        width: 180px;
+        line-height: 24.3px;
+        margin: 0 0 0 40px;
+    }
+    header .btnWrap button {
+        font-size: 0.8em;
+        height: 50px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 155px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 225px;
+    }
+    nav {
+        height: 70px;
+        position: static;
+        padding: 0;
+        display: block;
+    }
+    nav .container {
+        width: 1000px;
+        height: 100%;
+    }
+    nav .container ul {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    nav .container ul li {
+        position: relative;
+        margin: 0;
+        height: 100%;
+        display: block;
+    }
+    nav .container ul li a:not(nav .container ul li:nth-child(1) .catalogSubMenu li a) {
+        display: flex;
+        position: relative;
+    }
+    nav .container ul li a:not(nav .container ul li:nth-child(5) .analiticsSubMenu li a) {
+      display: flex;
+      position: relative;
+  }
+    nav .container ul li a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #1D5DB5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    nav .container ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    nav .container ul li div {
+        height: 100%;
+      }
+      nav .container ul li div div {
+        display: none;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        flex-direction: column;
+        height: auto;
+        margin: 5px 0 0 0;
+        width: 190px;
+        padding: 5px 20px;
+      }
+      nav .container ul li:nth-child(1):hover  .catalogSubMenu {
+        display: block;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li {
+        margin: 10px 0 0 0;
+        padding: 5px 0;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li a:hover {
+        color: #1e4379;
+        font-weight: bold;
+        padding: 0 0 0 5px;
+        transition: 0.2s;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li a::after {
+        height: 0;
+      }
+      nav .container ul li:nth-child(5) .analiticsSubMenu {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        flex-direction: column;
+        height: auto;
+        margin: 5px 0 0 0;
+        width: 190px;
+        padding: 10px 20px 20px 20px;
+      }
+      nav .container ul li:nth-child(5):hover  .analiticsSubMenu {
+        display: block;
+      }
+      nav .container ul li:nth-child(5) .analiticsSubMenu li {
+        margin: 10px 0 0 0;
+        padding: 5px 0;
+      }
+      nav .container ul li:nth-child(5) .analiticsSubMenu li a:hover {
+        color: orange;
+        font-weight: bold;
+        padding: 0 0 0 5px;
+        transition: 0.2s;
+      }
+      nav .container ul li:nth-child(5) .analiticsSubMenu li a::after {
+        height: 0;
+      }
+      nav .container ul li:nth-child(1) .catalogSubMenu li a {
+        font-size: 0.8em;
+      }
+      nav .container ul li:nth-child(5) .analiticsSubMenu li a {
+        font-size: 0.8em;
+      }
+      #introduction .container h1 {
+		font-size: 2.6em;
+		line-height: 60px;
+		margin: 150px 0 0 0;
+        font-weight: bold;
+        width: 500px;
+	  }
+	  #introduction .container div:nth-child(1) {
+		justify-content: flex-start;
+	  }
+	  #introduction .container div:nth-child(1) div:nth-child(2) .img {
+		width: 500px;
+		height: 550px;
+		margin: 115px 0 -150px 0;
+	  }
+      #introduction .inpWrap {
+        width: 400px;
+        padding: 70px 0 0 0;
+      }
+      .list {
+        width: 1000px;
+      }
+      .list .title {
+          text-align: left;
+      }
+      .list .desc {
+          text-align: left;
+      }
+      .list .info {
+          display: flex;
+          margin: 25px 0 0 0;
+      }
+      .list .info p {
+          text-align: left;
+      }
+      .list .info p:not(.list .info p:first-child) {
+        margin-left: 60px;
+      }
+      .list .wrap {
+          display: flex;
+          justify-content: space-between;
+      }
+      .list .right img {
+        left: 35px;
+        }
+        .list .info div img {
+            left: 45px;
+            top: 27px;
+        }
+        .list .info div:nth-child(3) img {
+            left: 40px;
+            top: 25px;
+        }  
+        aside .container {
+            width: 1000px;
+        }
+        aside .ad {
+            width: 100%;
+        }
+        footer .container {
+            width: 1000px;
+          }
+          footer .container div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+          }
+        
+          footer .container div:nth-child(1) .links {
+            margin: 0;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 600px;
+            margin: -10px 0 0 0;
+          }
+        
+          footer .container div:nth-child(1) .links > div div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          }
+        
+          footer .container div:nth-child(1) .links > div div a {
+            margin: 15px 0 0 0;
+            font-size: 0.8em;
+          }
+        
+          footer .container div:nth-child(1) .links > div {
+            padding: 0 15px 20px 15px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+          }
+        
+          footer .container div:nth-child(1) .links ul li a {
+            font-size: 0.8em;
+          }
+        
+          footer .container div:nth-child(1) .logoText {
+            width: 400px;
+          }
+        
+          footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+            font-size: 0.8em;
+          }
+        
+          footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+            font-size: 0.7em;
+            line-height: 18px;
+          }
+        
+          footer .container div:nth-child(1) .logoText img {
+            width: 130px;
+            height: 130px;
+          }
+        
+          footer .container div:nth-child(1) .logoText div {
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            padding: 0 0 0 10px;
+          }
+        
+          footer {
+            padding: 50px 0;
+          }
+        
+          footer .container div .links > div {
+            margin: 0;
+          }
+}
+
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 515px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        font-size: 1em;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 25%;
+        font-size: 1.2em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img {
+		width: 600px;
+    }
+}
+
+
+@media (min-width: 1680px) {
+    #auth div img {
+        width: 600px;
+        height: 680px;
+        margin: 130px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 795px;
+        width: 200px;
+        height: 200px;
+    }
+    #auth div input:nth-child(5) {
+        margin: 220px 0 0 0;
+    }
+    #auth div button {
+        margin: 380px 0 0 0;
+        height: 80px;
+    }
+    #auth div .rememberForget {
+        margin: 580px 0 0 0;
+        width: 24%;
+    }
+    header .container {
+        width: 1200px;
+    }
+    header .btnWrap button {
+        font-size: 0.93em;
+        height: 66px;
+    }
+    header .btnWrap button:nth-child(1) {
+        width: 205px;
+    }
+    header .btnWrap button:nth-child(2) {
+        width: 275px;
+    }
+    header .logoText p { 
+        font-size: 1.125em;
+        width: 230px;
+    }
+    nav .container {
+        width: 1200px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) .img {
+		margin: 133px 0 -150px 0;
+		width: 650px;
+		height: 600px;
+	}
+    .list {
+        width: 1200px;
+      }
+      aside .container {
+        width: 1200px;
+    }
+    footer .container {
+        width: 1200px;
+      }
+    
+      footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.9em;
+      }
+    
+      footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.8em;
+      }
+    
+      footer .container div:nth-child(1) .links {
+        width: 700px;
+      }
+    
+      footer .container div:nth-child(1) .logoText {
+        width: 400px;
+      }
+    
+      footer .container div:nth-child(1) .links > div {
+        padding: 0 26px 20px 26px;
+      }
+}
+
+
+.information-head-txt1 {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  @media (max-width: 1366px) and (max-width: 1024px) {
+    .information-head-txt1 {
+      font-size: 45px;
+    }
+  }
+  @media (max-width: 1366px) and (max-width: 1024px) and (max-width: 768px) {
+    .information-head-txt1 {
+      font-size: 35px;
+    }
+  }
+  @media (max-width: 1366px) and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) {
+    .information-head-txt1 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 1366px) and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .information-head-txt1 {
+      font-size: 25px;
+    }
+  }
+  .information-card-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 80px 0 100px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .information-card-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .information-card-row {
+      font-size: 13px;
+    }
+  }
+  .information-card-item {
+    border: 1px solid #e4e4e4;
+    width: 234px;
+    height: 191px;
+  }
+  
+  .information-card-item:nth-child(2) {
+    background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main4.png') no-repeat center/cover;
+  }
+  .information-card-row .information-card-item:nth-child(2) .information-card-text {
+    color: #fff;
+  }
+  .information-card-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 30px 0 0 30px;
+    color: #2E344B;
+  }
+  
+  .information-card-row .information-card-item:nth-child(2) .information-card-text {
+    color: #fff;
+  }
+  .information-card-text span {
+    font-weight: bold;
+  }
+  .information-card-image {
+    width: 25px;
+    height: 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 30px 0 0 30px;
+  }
+
+
+  @media (min-width: 280px) {
+    #auth div img:nth-child(2) {
+        height: auto;
+        transform: rotate(12deg);
+        top: 18px;
+    }
+}
+
+@media (min-width: 412px) {
+    #auth div img:nth-child(2) {
+        top: 25px;
+    }
+}
+
+@media (min-width: 540px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 130px;
+        width: 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 240px;
+    }
+}
+
+@media (min-width: 820px) {
+    #auth div img:nth-child(2) {
+        left: 260px;
+    }
+}
+
+@media (min-width: 912px) {
+    #auth div img:nth-child(2) {
+        top: 24px;
+        left: 290px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #auth div img:nth-child(2) {
+        top: 26px;
+        left: 320px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 450px;
+    }
+}
+
+@media (min-width: 1366px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #auth div img:nth-child(2) {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #auth div img:nth-child(2) {
+        left: 620px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #auth div img:nth-child(2) {
+        top: 36px;
+        left: 760px;
+        width: 180px;
+    }
+}

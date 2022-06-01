@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/about.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="auth">
+        <div id="authWrap">
+            <img src="assets/img/auth.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>АВТОРИЗАЦИЯ</p>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <button>ВОЙТИ</button>
+            <div class="rememberForget">
+                <div>
+                    <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logoWrapBars">
+                    <div class="logoText">
+                        <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+                        <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+                    </div>
+                    <div class="barsWrap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="btnWrap">
+                    <button>ВОЙТИ</button>
+                    <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="catalog.html">Каталог компаний</a>
+                            <div>▼</div>
+                        </div>
+                        <ul class="catalogSubMenu">
+                            <li><a href="#">ГЛАВНАЯ — </a></li>
+                            <li><a href="#">АНАЛИТИКА —</a></li>
+                            <li><a href="#">НОВОСТИ КОМПАНИЙ</a></li>
+                            <li><a href="#">НАЗВАНИЕ СТАТЬИ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+                    <li><a href="application.html">Заявки</a></li>
+                    <li><a href="private-ads.html">Частные объявления</a></li>
+                    <li><a href="analytics.html">Аналитика</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="content">
+                <section id="project">
+                    <div class="project-container _container">
+                        <div class="project-content">
+                            <div class="project-head">
+                                <h1>О ПРОЕКТЕ</h1>
+                                <div class="project-card-row">
+                                    <div class="project-card-item">
+                                        <div>
+                                            <h1>500</h1>
+                                            <img src="assets/img/Vector-people.png" alt="Vector-people">
+                                        </div>
+                                        <p>Пользователей <br> ежедневно</p>
+                                    </div>
+                                    <div class="project-card-item">
+                                        <div>
+                                            <h1>575</h1>
+                                            <img src="assets/img/Vector-city.png" alt="Vector-city">
+                                        </div>
+                                        <p>Зарегистрировано <br> компаний
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="assets/img/roundText.png" alt="roundText">
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section id="portal">
+                    <div class="portal-container _container">
+                        <div class="portal-content">
+                            <div class="portal-row">
+                                <div class="portal-item">
+                                    <p>
+                                         Проект Труба24.ру был основан в 2009 году <br>
+                                        <span>и на сегодняшний день является одной из ведущих <br>
+                                        компаний, предоставляющих информационные услуги <br>
+                                        в трубной отрасли.<br></span>
+                                    </p>
+                                    <p>
+                                        Задача проекта заключается в <span>обеспечении контакта<br>
+                                        между потребителем и поставщиком</span> трубы и трубной <br>
+                                        арматуры за счет информационных продуктов и услуг,<br>
+                                        основанных на современных технологиях
+                                    </p>
+                                    <h1>Аудитория портала Труба 24.ру</h1>
+                                    <p>
+                                        Это производители, потребители и люди, занимающиеся <br>
+                                        продажей трубы
+                                    </p>
+                                </div>
+                                <div class="portal-item">
+                                    <div class="portal-img">
+                                        <img src="assets/img/main17.png" alt="main17">
+                                    </div>
+                                    <div>
+                                        <h1>Каждый из <br>
+                                         разделов портала</h1>
+                                        <p>Это сервис для трубного рынка</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="pad">
+                    <div class="pad-container _container">
+                        <div class="pad-content">
+                            <div class="pad-row">
+                                <div class="pad-item">
+                                    <!-- <div class="pad-itemi"> -->
+                                        <div>
+                                            <div class="col"></div>
+                                        </div>
+                                        <div>
+                                            <p>На нашем ресурсе<span> Вы можете подать<br>
+                                                объявление о продаже или покупке<br>
+                                                металлопроката и трубной арматуры. </span></p>
+
+                                            <p>В каталоге компаний Вы можете подобрать<br>
+                                                поставщика или производителя трубы <br>
+                                                удовлетворяющего Вашим требованиям и <br>
+                                                пожеланиям, а также зарегистрировать свою<br>
+                                                компанию</p>
+                                        </div>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="pad-item">
+                                    <img src="assets/img/tablet.svg" alt="tablet">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="object">
+                    <div class="object-container _container">
+                        <div class="object-row">
+                            <div class="object-item">
+                                <div>
+                                    <div class="object-column"></div>
+                                </div>
+                                <div>
+                                    <p>Если ваша задача сделать бренд узнаваемым, <br>
+                                        то предлагаем Вашему вниманию <span>рекламу<br>
+                                         широкоформатными баннерами на страницах<br>
+                                          портала Труба 24.ру,</span> среди посетителей сайта, <br>
+                                          а именно представителей трубных компаний</p>
+                                </div>
+                            </div>
+                            <div class="object-item">
+                                <img src="assets/img/object.png" alt="object">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div>
+                    <div class="logoText">
+                        <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+                        <div>
+                            <p>© 2009-2022 Труба24.ру</p>
+                            <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="about.html">О КОМПАНИИ</a></li>
+                            <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+                            <li><a href="services.html">УСЛУГИ</a></li>
+                            <li><a href="clients.html">КЛИЕНТЫ</a></li>
+                            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                        <div>
+                            <div>
+                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+           <script src="scripts/script.js"></script>
+    <script src="scripts/menu.js"></script>
+    </div>
+</body>
+</html>

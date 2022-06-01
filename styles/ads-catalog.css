@@ -1,0 +1,692 @@
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+       width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.calog-title.app-catalog-title>h1{
+    font-size: 25px!important;
+    line-height: 40px!important;
+}
+.application-catalog-sort {
+    margin-top: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.application-catalog-sort>h2{
+width: 28%;
+font-family: 'RFDewiExpanded',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 55px;
+text-align: center;
+text-transform: uppercase;
+background: -o-linear-gradient(180.04deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.date-catalog-app {
+    width:18%!important;
+}
+.application-catalog-sort>span{
+        font-family:'RFDewiExpanded',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height:35px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+letter-spacing: 0.02em;
+color: #585D6F;
+}
+.purchase-orders-col.ads {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+    margin:25px 0 0 0;
+}
+.latest-ads-desk-btn.ads-catalog>button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.45763px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.latest-ads-desk-btn.ads-catalog>button:nth-child(1):hover{
+-webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: #236cd3;
+}
+.latest-ads-desk-btn.ads-catalog>button:nth-child(2):hover{
+-webkit-transition: 0.4s;
+    transition: 0.4s;
+     background: rgb(231, 231, 231);
+    transition: 0.4s;
+}
+.latest-ads-desk-btn.ads-catalog>button>img {
+   transform: translateY(3px);
+}
+.purchase-ads-block {
+    width: 100%;
+    height: 105px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ebebed;
+}
+.purchase-ads-block>span{
+
+font-family:'RFDewiExpanded',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 11.2977px;
+line-height: 135%;
+text-align: center;
+letter-spacing: 1.61em;
+color: #2E344B;
+}
+.latest-ads-item.premium {
+    margin-top: 0;
+}
+.purchase-orders-row-btn {
+    width: 30%;
+    margin: 80px auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+}   
+.purchase-orders-row-btn>button{
+    max-width: 237px;
+    height: 74px;
+    background: transparent;
+    font-family:'RFDewiExpanded',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+
+.purchase-orders-row>span:nth-child(1) {
+    font-size: 14px!important;
+}
+ .date-catalog-app {
+    width:18%!important;
+    font-size: 10px!important;
+}
+ .purchase-orders-row.button>button:nth-child(1) {
+    font-size: 10px!important;
+ }
+ .purchase-orders-row.button>button:nth-child(2) {
+    font-size: 10px!important;
+ }
+ .purchase-orders-row.button>button:nth-child(3) {
+    font-size: 10px!important;
+ }
+ .purchase-orders-row.button>button:nth-child(4) {
+    font-size: 10px!important;
+ }
+
+ .purchase-orders-row.center>span:nth-child(1) {
+    width: 40%!important;
+
+ }
+ .application-catalog-sort>h2 {
+    font-size: 24px;
+ }
+.premium-ribbon-more {
+    margin-left: 7px;
+}
+
+}
+@media (max-width:990px) {
+
+.purchase-orders-row>span:nth-child(1) {
+    font-size: 12px!important;
+}
+ .date-catalog-app {
+    width:18%!important;
+    font-size: 10px!important;
+}
+.purchase-orders-row {
+    width: 100%;
+ }
+  .application-catalog-sort>h2 {
+    width: 50%;
+ }
+ #introduction {
+    min-height:auto!important;
+}
+.latest-ads-desk-btn>button {
+    font-size: 12px;
+}
+
+}
+
+@media (max-width:550px) {
+  .application-catalog-sort>h2 {
+    width: 80%;
+ }
+ .purchase-orders-col-right {
+    width: 60%;
+ }
+ .purchase-orders-row>span:nth-child(1) {
+    width: 30%;
+}
+.date-catalog-app {
+    width: 35%!important;
+}
+.purchase-orders-row.center>span:nth-child(2) {
+    width: 32%!important;
+}
+.purchase-orders-row.center>span:nth-child(1) {
+    font-size: 12px!important;
+    width: 66%!important;
+}
+
+}
+
+
+@media (max-width:375px) {
+  .application-catalog-sort>h2 {
+    width: 90%;
+ }
+ .purchase-orders-col-right {
+    width: 70%;
+ }
+ .purchase-orders-row>span:nth-child(2) {
+    font-size: 6px;
+}
+}
+
+
+
+
+
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+  }
+  
+  nav .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+  }
+  
+  nav .container ul li a {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 1em;
+    padding: 0;
+  }
+  
+  nav .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  
+  nav .container ul li {
+    margin: 40px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            height: auto;
+  }
+  nav .container ul li:nth-child(1) .catalogSubMenu li a {
+    font-size: 0.85em;
+    font-family: Montserrat;
+    font-style: italic;
+    padding: 0;
+    display: block;
+    text-align: left;
+    font-weight: normal !important;
+  }
+  
+  nav .container ul li div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  nav .container ul li div div {
+    margin: 0 0 0 30px;
+    border: 1px solid #1A3286;
+    padding: 6px 4px 3px 4px;
+    font-size: 0.9em;
+  }
+  
+  nav .container ul li:nth-child(1) .catalogSubMenu {
+    background-color: #FCFCFC;
+    padding: 10px 30px 40px 30px;
+    margin: 20px 0 0 0;
+    min-width: 220px;
+    display: none;
+    position: static;
+  } 
+
+
+  @media (min-width: 1024px) {
+  
+    nav {
+      height: 70px;
+      position: static;
+      padding: 0;
+      display: block;
+    }
+  
+    nav .container {
+      width: 1000px;
+      height: 100%;
+    }
+  
+    nav .container ul {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+  
+    nav .container ul li {
+      position: relative;
+      margin: 0;
+      height: 100%;
+      display: block;
+    }
+  
+    nav .container ul li a:not(nav .container ul li:nth-child(1) .catalogSubMenu li a) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+    }
+  
+    nav .container ul li a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      background: #1D5DB5;
+      -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  
+    nav .container ul li a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  
+    nav .container ul li div {
+      height: 100%;
+    }
+  
+    nav .container ul li div div {
+      display: none;
+    }
+  
+    nav .container ul li:nth-child(1) .catalogSubMenu {
+      position: absolute;
+      left: 0;
+      top: 65px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+      margin: 5px 0 0 0;
+      width: 190px;
+      padding: 5px 20px;
+    }
+  
+    nav .container ul li:nth-child(1):hover .catalogSubMenu {
+      display: block;
+    }
+  
+    nav .container ul li:nth-child(1) .catalogSubMenu li {
+      margin: 10px 0 0 0;
+      padding: 5px 0;
+    }
+  
+    nav .container ul li:nth-child(1) .catalogSubMenu li a:hover {
+      color: #1e4379;
+      font-weight: bold;
+      padding: 0 0 0 5px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+    }
+  
+    nav .container ul li:nth-child(1) .catalogSubMenu li a::after {
+      height: 0;
+    }
+  }
+
+
+  @media (min-width: 1680px) {
+    nav .container {
+        width: 1200px;
+      }
+    
+  }
+
+
+  header {
+    height: 240px;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  
+  header .container {
+    margin: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  
+  header .logoText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .logoText img {
+    width: 43.67px;
+    height: 43.67px;
+  }
+  
+  header .logoText p {
+    width: 116.24px;
+    line-height: 12.38px;
+    color: #2E344B;
+    margin: 0 0 0 15px;
+    font-family: Montserrat;
+    font-size: 0.57em;
+  }
+  
+  header .logoWrapBars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .btnWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  header .btnWrap button {
+    border: 0;
+    height: 66px;
+    cursor: pointer;
+    font-size: 0.58em;
+    height: 41.25px;
+    font-family: Montserrat;
+    width: 100%;
+  }
+  
+  header .btnWrap button:nth-child(1) {
+    background: #1D5DB5;
+    color: #fff;
+  }
+  
+  header .btnWrap button:nth-child(1):hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: #236cd3;
+  }
+  
+  header .btnWrap button:nth-child(2) {
+    border: 1px solid #1D5DB5;
+    color: #1D5DB5;
+    background: #fff;
+  }
+  
+  header .btnWrap button:nth-child(2):hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: #f1f1f1;
+  }
+  
+  header .barsWrap .bar1, header .barsWrap .bar2, header .barsWrap .bar3 {
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+
+
+  @media (min-width: 280px) {
+    header .btnWrap button:nth-child(1) {
+      width: 100px;
+    }
+  
+    header .btnWrap button:nth-child(2) {
+      width: 150px;
+    }
+}
+
+
+@media (min-width: 360px) {
+    header .btnWrap button:nth-child(1) {
+      width: 128.12px;
+    }
+  
+    header .btnWrap button:nth-child(2) {
+      width: 171.88px;
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    header {
+      height: 170px;
+    }
+  
+    header .barsWrap {
+      display: none;
+    }
+  
+    header .container {
+      width: 1000px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+  
+    header .logoWrapBars {
+      display: block;
+    }
+  
+    header .logoText img {
+      width: 85.7px;
+      height: 85.7px;
+    }
+  
+    header .logoText p {
+      font-size: 0.9em;
+      width: 180px;
+      line-height: 24.3px;
+      margin: 0 0 0 40px;
+    }
+  
+    header .btnWrap button {
+      font-size: 0.8em;
+      height: 50px;
+    }
+  
+    header .btnWrap button:nth-child(1) {
+      width: 155px;
+    }
+  
+    header .btnWrap button:nth-child(2) {
+      width: 225px;
+    }
+  }
+  
+  
+  @media (min-width: 1680px) {
+    header .container {
+      width: 1200px;
+    }
+  
+    header .btnWrap button {
+      font-size: 0.93em;
+      height: 66px;
+    }
+  
+    header .btnWrap button:nth-child(1) {
+      width: 205px;
+    }
+  
+    header .btnWrap button:nth-child(2) {
+      width: 275px;
+    }
+  
+    header .logoText p {
+      font-size: 1.125em;
+      width: 230px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    #introduction {
+       padding: 70px 0;
+    }
+    #catalog-logo {
+        display: none;
+    }
+}

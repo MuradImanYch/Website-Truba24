@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="styles/technology.css" rel="stylesheet">
+  <link href="styles/programs.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="auth">
+    <div id="authWrap">
+      <img src="assets/img/auth.png" alt="auth">
+      <img src="assets/img/authImg.png" alt="authImg">
+      <p>АВТОРИЗАЦИЯ</p>
+      <input type="text" placeholder="E-mail" />
+      <input type="password" placeholder="Пароль" />
+      <button>ВОЙТИ</button>
+      <div class="rememberForget">
+        <div>
+          <input id="remember" type="radio" />
+          <label for="remember">Запомнить</label>
+        </div>
+        <a href="#">Забыли пароль</a>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="logoWrapBars">
+        <div class="logoText">
+          <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+          <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+        </div>
+        <div class="barsWrap">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="btnWrap">
+        <button>ВОЙТИ</button>
+        <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="catalog.html">Каталог компаний</a></li>
+        <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+        <li><a href="application.html">Заявки</a></li>
+        <li><a href="private-ads.html">Частные объявления</a></li>
+        <li>
+          <div>
+            <a href="analytics.html">Аналитика</a>
+            <div>▼</div>
+          </div>
+          <ul class="analiticsSubMenu">
+            <li><a href="#">ГОСТ И ТУ</a></li>
+            <li><a href="#">ТЕХНОЛОГИИ ПРОИЗВОДСТВА</a></li>
+            <li><a href="#">ПРОГРАММЫ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="introduction">
+    <div class="container">
+      <div>
+        <div>
+          <h1>ПРОГРАММЫ  И СЕРВИСЫ ДЛЯ МЕТАЛЛУРГА</h1>
+        </div>
+        <div>
+          <div class="img">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="programs-wrap">
+        <div class="programs-item">
+          <div class="programs-item-img">
+            <img src="assets/img/programs-card-img.png" alt="#">
+          </div>
+          <div class="programs-item-calc">
+            <div class="item-calc-deskription">
+              <span>КАЛЬКУЛЯТОР МЕТАЛЛОПРОКАТА ОНЛАЙН</span>
+            </div>
+            <div class="item-calc-date">
+              <p>05 июля, 2015 <span><img src="assets/ico/comment.svg" alt="comment"> 12</span> <span><img src="assets/ico/Vectorbook.svg" alt="Vectorbook"> 257</span></p>
+            </div>
+          </div>
+          <div class="programs-item-deskription">
+            <p>Расчет объемов и норм металлопроката - необходимая процедура, будь Вы покупателем или производителем данной продукции.</p>
+          </div>
+          <div class="programs-item-rating">
+            <div class="simple-rating">
+              <div class="simple-rating-num">
+                <span>3.9</span>
+                <span>Рейтинг</span>
+              </div>
+              <div class="simple-rating__items">
+                <input id="simple-rating__5" type="radio"   class="simple-rating__item" name="simple-rating" value="5">
+                <label for="simple-rating__5" class="simple-rating__label"></label>
+                <input id="simple-rating__4"  checked="4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
+                <label for="simple-rating__4" class="simple-rating__label"></label>
+                <input id="simple-rating__3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
+                <label for="simple-rating__3" class="simple-rating__label"></label>
+                <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                <label for="simple-rating__2" class="simple-rating__label"></label>
+                <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                <label for="simple-rating__1" class="simple-rating__label"></label>
+              </div>
+              <div class="simple-rating-votes">
+                <span>Голосов: 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-ads-center">
+          <span> ОБЪЯВЛЕНИЯ</span>
+        </div>
+        <div class="programs-item">
+          <div class="programs-item-img">
+            <img src="assets/img/programs-card-img.png" alt="#">
+          </div>
+          <div class="programs-item-calc">
+            <div class="item-calc-deskription">
+              <span>КАЛЬКУЛЯТОР МЕТАЛЛОПРОКАТА ОНЛАЙН</span>
+            </div>
+            <div class="item-calc-date">
+              <p>05 июля, 2015 <span><img src="assets/ico/comment.svg" alt="comment"> 12</span> <span><img src="assets/ico/Vectorbook.svg" alt="Vectorbook"> 257</span></p>
+            </div>
+          </div>
+          <div class="programs-item-deskription">
+            <p>Расчет объемов и норм металлопроката - необходимая процедура, будь Вы покупателем или производителем данной продукции.</p>
+          </div>
+          <div class="programs-item-rating">
+            <div class="simple-rating">
+              <div class="simple-rating-num">
+                <span>3.9</span>
+                <span>Рейтинг</span>
+              </div>
+              <div class="simple-rating__items">
+                <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+                <label for="simple-rating__5" class="simple-rating__label"></label>
+                <input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
+                <label for="simple-rating__4" class="simple-rating__label"></label>
+                <input id="simple-rating__3" type="radio"  class="simple-rating__item" name="simple-rating" value="3">
+                <label for="simple-rating__3" class="simple-rating__label"></label>
+                <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                <label for="simple-rating__2" class="simple-rating__label"></label>
+                <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                <label for="simple-rating__1" class="simple-rating__label"></label>
+              </div>
+              <div class="simple-rating-votes">
+                <span>Голосов: 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="programs-item">
+          <div class="programs-item-img">
+            <img src="assets/img/programs-card-img.png" alt="#">
+          </div>
+          <div class="programs-item-calc">
+            <div class="item-calc-deskription">
+              <span>КАЛЬКУЛЯТОР МЕТАЛЛОПРОКАТА ОНЛАЙН</span>
+            </div>
+            <div class="item-calc-date">
+              <p>05 июля, 2015 <span><img src="assets/ico/comment.svg" alt="comment"> 12</span> <span><img src="assets/ico/Vectorbook.svg" alt="Vectorbook"> 257</span></p>
+            </div>
+          </div>
+          <div class="programs-item-deskription">
+            <p>Расчет объемов и норм металлопроката - необходимая процедура, будь Вы покупателем или производителем данной продукции.</p>
+          </div>
+          <div class="programs-item-rating">
+            <div class="simple-rating">
+              <div class="simple-rating-num">
+                <span>3.9</span>
+                <span>Рейтинг</span>
+              </div>
+              <div class="simple-rating__items">
+                <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+                <label for="simple-rating__5" class="simple-rating__label"></label>
+                <input id="simple-rating__4" type="radio"  class="simple-rating__item" name="simple-rating" value="4">
+                <label for="simple-rating__4" class="simple-rating__label"></label>
+                <input id="simple-rating__3" type="radio"  class="simple-rating__item" name="simple-rating" value="3">
+                <label for="simple-rating__3" class="simple-rating__label"></label>
+                <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                <label for="simple-rating__2" class="simple-rating__label"></label>
+                <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                <label for="simple-rating__1" class="simple-rating__label"></label>
+              </div>
+              <div class="simple-rating-votes">
+                <span>Голосов: 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="information-container">
+      <div class="information-box">
+        <div class="information-head">
+          <p class="information-head-txt1">
+            Не нашли нужную
+            <br> информацию?
+          </p>
+        </div>
+        <div class="information-card-row">
+          <div class="information-card-item">
+            <img src="assets/img/imgcard01.png" alt="" class="information-card-image1 information-card-image">
+            <div class="information-card-text">
+              Ознакомьтесь
+              <br> с разделом <span>ГОСТ<br>
+                                 на металлопрокат</span>
+            </div>
+          </div>
+          <div class="information-card-item">
+            <img src="assets/img/imgcard02White.png" alt="" class="information-card-image2 information-card-image">
+            <div class="information-card-text">
+              Посмотрите статьи
+              <br> на тему <span>технологии <br>
+                            производства <br>
+                            металлопроката</span>
+            </div>
+          </div>
+          <div class="information-card-item">
+            <img src="assets/ico/playInRound.svg" alt="" class="information-card-image3 information-card-image">
+            <div class="information-card-text">
+              Скачайте полезные
+              <br>
+              <span>программы для <br>
+                             металлурга</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div>
+        <div class="logoText">
+          <a href="/"><img src="assets/ico/logoFooter.jpg" alt="logoFooter"></a>
+          <div>
+            <p>© 2009-2022 Труба24.ру</p>
+            <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+          </div>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="about.html">О КОМПАНИИ</a></li>
+            <li><a href="advertising.html">МЕДИЙНАЯ РЕКЛАМА</a></li>
+            <li><a href="services.html">УСЛУГИ</a></li>
+            <li><a href="clients.html">КЛИЕНТЫ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <div>
+            <div>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

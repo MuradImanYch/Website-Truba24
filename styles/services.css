@@ -1,0 +1,1429 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+  font-family: RFDewiExpanded;
+  font-display: swap;
+  src: url("../assets/fonts/RFDewiExpanded-Regular"), url("../assets/fonts/RFDewiExpanded-Regular.ttf"), url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  ._container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1440px) and (max-width: 1024px) {
+  ._container {
+    max-width: 90%;
+  }
+}
+/*----------------------------------------------------------------------------------------*/
+@media (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .wrapper .deckstop-box {
+    display: none;
+  }
+}
+#deckstop {
+  padding: 50px 0 0 0;
+}
+/*-Deckstop-----------------------------------------*/
+#deckstop .deckstop-content h1 {
+  font-family: RFDewiExpanded;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 155%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 0 30px 0;
+}
+
+#deckstop .deckstop-box {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0 20px;
+}
+
+#deckstop .deckstop-item1 {
+  width: 100%;
+  height: 70px;
+  border-top: none;
+  border-left: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          font-family: Montserrat;
+}
+
+#deckstop .deckstop-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#deckstop .deckstop-item1:nth-child(1) {
+  width: 3000px;
+}
+
+#deckstop .deckstop-item:nth-child(1) {
+  width: 3000px;
+}
+
+#deckstop .deckstop-item1:nth-last-child(1) {
+  border-right: 1px solid #E6E6E6;
+}
+
+#deckstop .deckstop-item1 p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 155%;
+  color: #2E344B;
+}
+
+#deckstop .deckstop-item1 img {
+  width: 21px;
+  height: 17px;
+}
+
+#deckstop .deckstop-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#deckstop .deckstop-item {
+  width: 100%;
+  height: 70px;
+  border-top: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1D5DB5;
+}
+
+#deckstop .deckstop-item p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 155%;
+  color: white;
+}
+#deckstop .deckstop-button button {
+  font-family: RFDewiExpanded;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 135%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background-color: #EB5829;
+  padding: 24px 90px;
+}
+#deckstop .deckstop-button button:hover {
+  transition: 0.4s;
+  background: #fa6a3a;
+}
+
+#deckstop .deckstop-button div {
+  -o-object-position: right;
+     object-position: right;
+}
+
+#deckstop .deckstop-item:nth-last-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#deckstop .deckstop-item11 {
+  width: 100%;
+  height: 70px;
+  border-top: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1D5DB5;
+}
+
+#deckstop .deckstop-row11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.white {
+  background-color: white;
+}
+
+#deckstop select {
+  padding: 20px 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 155%;
+  color: #2E344B;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*----------------------------------------*/
+#standart .standart-box {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #standart .standart-content {
+    margin: 30px 0;
+  }
+
+  #standart .standart-box {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 0 20px;
+    display: inline;
+  }
+
+  #standart .standart-item1 img {
+    width: 21px;
+    height: 17px;
+  }
+
+  #standart .standart-item1 p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 155%;
+    color: #2E344B;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+  }
+
+  #standart .standart-item1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+    width: 100%;
+    height: 50px;
+  }
+
+  .standart-item:nth-child(1) {
+    border-left: none;
+  }
+
+  .standart-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #standart .standart-item {
+    width: 100%;
+    height: 50px;
+    background-color: #1D5DB5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  #standart .standart-item p {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 155%;
+    color: white;
+  }
+
+  #standart .standart-row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #standart .standart-item img {
+    width: 106px;
+    height: 23.5px;
+  }
+}
+.standart-buttonq button {
+  font-family: RFDewiExpanded;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background-color: #EB5829;
+  width: 100%;
+  height: 60px;
+}
+@media (max-width: 768px) {
+  .standart-buttonq button {
+    padding: 0 45%;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .standart-buttonq button {
+    padding: 0 40%;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+  .standart-buttonq button {
+    padding: 0 38%;
+  }
+}
+
+#standart select {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 155%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*-------------------------------*/
+#auth {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(229, 229, 229, 0.5);
+  z-index: 2022;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+#auth div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#auth div img {
+  width: 80%;
+  margin: 100px 0 0 0;
+}
+#auth div img:nth-child(2) {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 60px;
+}
+#auth div p:nth-child(3) {
+  position: absolute;
+  color: #2E344B;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  font-family: RFDewiExpanded;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 0 20px 0 0;
+}
+#auth div input:nth-child(4) {
+  position: absolute;
+  margin: 100px 0 0 0;
+  border: 0;
+  border-bottom: 1px solid #2E344B;
+  font-family: RFDewiExpanded;
+  outline: 0;
+  background: transparent;
+  font-size: 0.6em;
+  padding: 0 0 5px 0;
+  color: #2E344B;
+}
+#auth div input:nth-child(5) {
+  position: absolute;
+  margin: 150px 0 0 0;
+  border: 0;
+  border-bottom: 1px solid #2E344B;
+  font-family: RFDewiExpanded;
+  outline: 0;
+  background: transparent;
+  font-size: 0.6em;
+  padding: 0 0 5px 0;
+  color: #2E344B;
+}
+header {
+  height: 240px;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+header .container {
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .logoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logoText img {
+  width: 43.67px;
+  height: 43.67px;
+}
+
+header .logoText p {
+  width: 116.24px;
+  line-height: 12.38px;
+  color: #2E344B;
+  margin: 0 0 0 15px;
+  font-family: Montserrat;
+  font-size: 0.57em;
+}
+
+header .logoWrapBars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .btnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .btnWrap button {
+  border: 0;
+  height: 66px;
+  cursor: pointer;
+  font-size: 0.58em;
+  height: 41.25px;
+  font-family: Montserrat;
+  width: 100%;
+}
+
+header .btnWrap button:nth-child(1) {
+  background: #1D5DB5;
+  color: #fff;
+}
+
+header .btnWrap button:nth-child(1):hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #236cd3;
+}
+
+header .btnWrap button:nth-child(2) {
+  border: 1px solid #1D5DB5;
+  color: #1D5DB5;
+  background: #fff;
+}
+
+header .btnWrap button:nth-child(2):hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #f1f1f1;
+}
+
+header .barsWrap .bar1, header .barsWrap .bar2, header .barsWrap .bar3 {
+  width: 35px;
+  height: 1px;
+  background-color: #000;
+  margin: 7px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer {
+  background: #0B3164;
+  padding: 70px 0;
+  margin: 70px 0 0 0;
+}
+
+footer .container {
+  width: 90%;
+  margin: auto;
+}
+
+footer .container div:nth-child(1) .logoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container div:nth-child(1) .logoText img {
+  width: 90px;
+  height: 80px;
+}
+
+footer .container div:nth-child(1) .logoText div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  padding: 0 0 0 30px;
+}
+
+footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 15px;
+}
+
+footer .container div:nth-child(1) .links {
+  margin: 40px 0 0 0;
+}
+
+footer .container div:nth-child(1) .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container div:nth-child(1) .links ul li {
+  margin: 20px 0 0 0;
+}
+
+footer .container div:nth-child(1) .links ul li a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  font-family: Montserrat;
+}
+
+footer .container div:nth-child(1) .links > div div a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 20px 0 0 0;
+  opacity: 0.5;
+}
+
+footer .container div:nth-child(1) .links > div div a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+footer .container div .links > div {
+  margin: 70px 0 0 0;
+}
+
+footer .container div .links > div div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container div .links > div div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 0 0 0;
+}
+nav {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  background: #fff;
+  display: none;
+  padding: 0 0 60px 0;
+}
+nav .container {
+  width: 90%;
+  margin: auto;
+  min-height: 100%;
+}
+nav .container ul li a {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #2E344B;
+  font-family: RFDewiExpanded;
+  font-size: 1em;
+  text-align: center;
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+nav .container ul li {
+  height: 100%;
+  margin: 50px 0 0 0;
+}
+nav .container ul li ul li a {
+  font-family: Montserrat;
+  font-size: 0.9em;
+}
+nav .container ul li div {
+  margin: 0 0 0 30px;
+  display: flex;
+}
+nav .container ul li ul li {
+  margin: 30px 0 0 0;
+}
+nav .catalogSubMenu {
+  background: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+}
+nav .container ul li ul {
+  background: #FCFCFC;
+  margin: 10px 0 0 0;
+  padding: 0 0 20px 0;
+  position: absolute;
+}
+nav .container ul li ul li a:hover {
+  color: #4392ff;
+}
+nav .container ul li div div {
+  font-size: 0.9em;
+  border: 1px solid #1A3286;
+  padding: 5px;
+}
+
+
+@media (min-width: 280px) {
+  header .btnWrap button:nth-child(1) {
+    width: 100px;
+  }
+
+  header .btnWrap button:nth-child(2) {
+    width: 150px;
+  }
+  #auth div p:nth-child(3) {
+    font-size: 0.7em;
+    margin: 40px 0 0 0;
+}
+#auth div button {
+    width: 155px;
+    border: 0;
+    background: #EB5829;
+    color: #fff;
+    height: 30px;
+    margin: 220px 0 0 0;
+    cursor: pointer;
+    font-family: RFDewiExpanded;
+    font-size: 0.5em;
+    position: absolute;
+}
+#auth div button:hover {
+    transition: 0.4s;
+    background: #f36738;
+}
+#auth div .rememberForget {
+    position: absolute;
+    margin: 300px 0 0 0;
+    flex-direction: row;
+    font-size: 0.8em;
+    justify-content: space-between;
+    width: 65%;
+}
+#auth div .rememberForget div {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0 0 0;
+    cursor: pointer;
+}
+#auth div .rememberForget div input {
+    width: 14px;
+    height: 14px;
+}
+#auth div .rememberForget div label {
+    padding: 3px 0 0 5px;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+#auth div .rememberForget a {
+    padding: 7px 0 0 0;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+}
+}
+@media (min-width: 360px) {
+  header .btnWrap button:nth-child(1) {
+    width: 128.12px;
+  }
+
+  header .btnWrap button:nth-child(2) {
+    width: 171.88px;
+  }
+}
+@media (min-width: 375px) {
+  #auth div p:nth-child(3) {
+    font-size: 1em;
+    margin: 0;
+  }
+  #auth div .rememberForget {
+      width: 58%;
+  } 
+}
+@media (min-width: 390px) {
+  #auth div img:nth-child(2) {
+    top: 16px;
+    left: 90px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 412px) {
+  footer .container div:nth-child(1) .links ul li a {
+    font-size: 1em;
+  }
+  #auth div p:nth-child(3) {
+    font-size: 1.2em;
+  }
+  #auth div input:nth-child(4) {
+      width: 45%;
+  }
+  #auth div input:nth-child(5) {
+      margin: 160px 0 0 0;
+      width: 45%;
+  }
+  #auth div button {
+      margin: 250px 0 0 0;
+      height: 40px;
+      width: 45%;
+  }
+  #auth div .rememberForget {
+      margin: 350px 0 0 0;
+  }
+}
+@media (min-width: 540px) {
+  #auth div p:nth-child(3) {
+    font-size: 1.4em;
+    margin: -50px 0 0 0;
+  }
+  #auth div .rememberForget {
+      width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  #premium {
+    width: 90px;
+  }
+  #auth div img {
+    width: 400px;
+    height: 450px;
+}
+#auth div img:nth-child(2) {
+    top: 18px;
+    left: 240px;
+    width: 120px;
+    height: 120px;
+}
+#auth div input:nth-child(4) {
+    width: 30%;
+}
+#auth div input:nth-child(5) {
+    width: 30%;
+    margin: 170px 0 0 0;
+}
+#auth div button {
+    width: 30%;
+    margin: 300px 0 0 0;
+}
+#auth div .rememberForget {
+    margin: 420px 0 0 0;
+    width: 33%;
+}
+}
+@media (min-width: 820px) {
+  #auth div img:nth-child(2) {
+    top: 20px;
+    left: 280px;
+}
+#deckstop .deckstop-button {
+  display: flex;
+  justify-content: flex-end;
+}
+#deckstop .deckstop-button button {
+  padding: 0;
+  width: 110px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (min-width: 912px) {
+  #auth div img:nth-child(2) {
+    top: 20px;
+    left: 320px;
+}
+#deckstop .deckstop-button button {
+  width: 135px;
+} 
+}
+@media (min-width: 1024px) {
+  #premium {
+    width: 102px;
+  }
+  header {
+    height: 170px;
+  }
+
+  header .barsWrap {
+    display: none;
+  }
+
+  header .container {
+    width: 1000px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  header .logoWrapBars {
+    display: block;
+  }
+
+  header .logoText img {
+    width: 85.7px;
+    height: 85.7px;
+  }
+
+  header .logoText p {
+    font-size: 0.9em;
+    width: 180px;
+    line-height: 24.3px;
+    margin: 0 0 0 40px;
+  }
+
+  header .btnWrap button {
+    font-size: 0.8em;
+    height: 50px;
+  }
+
+  header .btnWrap button:nth-child(1) {
+    width: 155px;
+  }
+
+  header .btnWrap button:nth-child(2) {
+    width: 225px;
+  }
+
+  footer .container {
+    width: 1000px;
+  }
+
+  footer .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  footer .container div:nth-child(1) .links {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 600px;
+    margin: -10px 0 0 0;
+  }
+
+  footer .container div:nth-child(1) .links > div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  footer .container div:nth-child(1) .links > div div a {
+    margin: 15px 0 0 0;
+    font-size: 0.8em;
+    font-family: Montserrat;
+  }
+
+  footer .container div:nth-child(1) .links > div {
+    padding: 0 15px 20px 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  footer .container div:nth-child(1) .links ul li a {
+    font-size: 0.8em;
+  }
+
+  footer .container div:nth-child(1) .logoText {
+    width: 400px;
+  }
+
+  footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+    font-size: 0.8em;
+  }
+
+  footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+    font-size: 0.7em;
+    line-height: 18px;
+  }
+
+  footer .container div:nth-child(1) .logoText img {
+    width: 130px;
+    height: 130px;
+  }
+
+  footer .container div:nth-child(1) .logoText div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 0 0 10px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  footer .container div .links > div {
+    margin: 0;
+  }
+
+  #auth div img {
+    width: 450px;
+    height: 500px;
+    margin: 70px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    top: 20px;
+    left: 350px;
+    width: 150px;
+    height: 150px;
+}
+#auth div p:nth-child(3) {
+    font-size: 1.8em;
+}
+#auth div input:nth-child(4) {
+    width: 22%;
+    font-size: 0.9em;
+}
+#auth div input:nth-child(5) {
+    width: 22%;
+    font-size: 0.9em;
+    margin: 180px 0 0 0;
+}
+#auth div button {
+    width: 22%;
+    margin: 320px 0 0 0;
+    height: 60px;
+}
+#auth div .rememberForget {
+    margin: 450px 0 0 0;
+    width: 24%;
+    font-size: 1em;
+}
+#auth div .rememberForget div input {
+    width: 20px;
+    height: 20px;
+}
+nav {
+  height: 70px;
+  position: static;
+  padding: 0;
+  display: block;
+}
+nav .container {
+  width: 1000px;
+  height: 100%;
+}
+nav .container ul {
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav .container ul li {
+  position: relative;
+  margin: 0;
+}
+nav .container ul li a {
+  display: inline-block;
+  position: relative;
+  padding: 30px 0 0 0;
+  font-size: 0.9em;
+}
+nav .container ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #1D5DB5;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav .container ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+nav .container ul li div {
+  height: 100%;
+}
+nav .container ul li div div {
+  display: none;
+}
+nav .container ul li ul {
+  flex-direction: column;
+  background: #fff;
+  width: 240px;
+  margin: 0px 0 0 29px;
+  height: auto;
+  padding: 10px 0px 10px 20px;
+  align-items: flex-start;
+}
+nav .container ul li ul li a {
+  padding: 0;
+}
+nav .container ul li ul li a::after {
+  height: 0px;
+}
+nav .container ul li ul li {
+  margin: 10px 0 0 0;
+}
+#deckstop .deckstop-button button {
+  width: 165px;
+} 
+}
+@media (min-width: 1280px) {
+  #auth div img:nth-child(2) {
+      top: 20px;
+      left: 515px;
+  }
+  #auth div p:nth-child(3) {
+      font-size: 2em;
+  }
+  #auth div input:nth-child(4) {
+      width: 22%;
+      font-size: 0.9em;
+  }
+  #auth div input:nth-child(5) {
+      width: 22%;
+      font-size: 0.9em;
+      margin: 180px 0 0 0;
+  }
+  #auth div button {
+      width: 22%;
+      margin: 320px 0 0 0;
+      font-size: 1em;
+  }
+  #auth div .rememberForget {
+      margin: 450px 0 0 0;
+      width: 25%;
+      font-size: 1.2em;
+  }
+  #deckstop .deckstop-content h1 {
+    font-size: 3.5em;
+  }
+  #deckstop .deckstop-button button {
+    width: 187px;
+    text-align: center;
+    height: 70px;
+  }
+}
+@media (min-width: 1680px) {
+  nav .container {
+    width: 1200px;
+}
+  header .container {
+    width: 1200px;
+  }
+
+  header .btnWrap button {
+    font-size: 0.93em;
+    height: 66px;
+  }
+
+  header .btnWrap button:nth-child(1) {
+    width: 205px;
+  }
+
+  header .btnWrap button:nth-child(2) {
+    width: 275px;
+  }
+
+  header .logoText p {
+    font-size: 1.125em;
+    width: 230px;
+  }
+
+  footer .container {
+    width: 1200px;
+  }
+
+  footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+    font-size: 0.9em;
+  }
+
+  footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+    font-size: 0.8em;
+  }
+
+  footer .container div:nth-child(1) .links {
+    width: 700px;
+  }
+
+  footer .container div:nth-child(1) .logoText {
+    width: 400px;
+  }
+
+  footer .container div:nth-child(1) .links > div {
+    padding: 0 26px 20px 26px;
+  }
+
+  #news .container {
+    width: 1200px;
+  }
+
+  #popular .container {
+    width: 1200px;
+  }
+  #auth div img {
+    width: 600px;
+    height: 680px;
+    margin: 130px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    top: 28px;
+    left: 795px;
+    width: 200px;
+    height: 200px;
+}
+#auth div input:nth-child(5) {
+    margin: 220px 0 0 0;
+}
+#auth div button {
+    margin: 380px 0 0 0;
+    height: 80px;
+}
+#auth div .rememberForget {
+    margin: 580px 0 0 0;
+    width: 24%;
+}
+#deckstop .deckstop-button button {
+  width: 252px;
+}
+}
+
+
+@media (min-width: 280px) {
+  #auth div img:nth-child(2) {
+      height: auto;
+      transform: rotate(12deg);
+      top: 18px;
+  }
+}
+
+@media (min-width: 412px) {
+  #auth div img:nth-child(2) {
+      top: 25px;
+  }
+}
+
+@media (min-width: 540px) {
+  #auth div img:nth-child(2) {
+      top: 32px;
+      left: 130px;
+      width: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  #auth div img:nth-child(2) {
+      top: 28px;
+      left: 240px;
+  }
+}
+
+@media (min-width: 820px) {
+  #auth div img:nth-child(2) {
+      left: 260px;
+  }
+}
+
+@media (min-width: 912px) {
+  #auth div img:nth-child(2) {
+      top: 24px;
+      left: 290px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #auth div img:nth-child(2) {
+      top: 26px;
+      left: 320px;
+      width: 140px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #auth div img:nth-child(2) {
+      top: 28px;
+      left: 450px;
+  }
+}
+
+@media (min-width: 1366px) {
+  #auth div img:nth-child(2) {
+      top: 28px;
+      left: 500px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #auth div img:nth-child(2) {
+      top: 32px;
+      left: 550px;
+  }
+}
+
+@media (min-width: 1536px) {
+  #auth div img:nth-child(2) {
+      top: 30px;
+      left: 580px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #auth div img:nth-child(2) {
+      left: 620px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #auth div img:nth-child(2) {
+      top: 36px;
+      left: 760px;
+      width: 180px;
+  }
+}

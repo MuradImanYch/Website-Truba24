@@ -1,0 +1,1123 @@
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+
+
+#auth {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    z-index: 2022;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+#auth div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#auth div img {
+    width: 80%;
+    margin: 100px 0 0 0;
+}
+#auth div img:nth-child(2) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 60px;
+}
+#auth div p:nth-child(3) {
+    position: absolute;
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+#auth div input:nth-child(4) {
+    position: absolute;
+    margin: 100px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+#auth div input:nth-child(5) {
+    position: absolute;
+    margin: 150px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+  }
+  nav .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+  }
+  nav .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 0.9em;
+    padding: 0;
+  }
+  nav .container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  nav .container ul li {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  nav .container ul li div {
+    display: flex;
+  }
+  nav .container ul li div div {
+    margin: 0 0 0 30px;
+    border: 1px solid #1A3286;
+    padding: 6px 4px 3px 4px;
+    font-size: 0.9em;
+  }
+#introduction {
+    background: #F6F6F6;
+}
+#introduction .container {
+    width: 90%;
+    margin: auto;
+    padding: 70px 0;
+}   
+#introduction .container h1 {
+    font-family: RFDewiExpanded;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+#introduction .container p {
+    text-align: center;
+    margin: 50px 0;
+    color: #2E344B;
+    line-height: 24px;
+}
+#introduction .container p span {
+    font-weight: bold;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button {
+    width: 100%;
+    border: 0;
+    background: #EB5829;
+    color: #fff;
+    height: 70px;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    font-family: RFDewiExpanded;
+    font-size: 0.7em;
+}
+#introduction .container div:nth-child(1) div:nth-child(1) button:hover {
+    transition: 0.4s;
+    background: #f36738;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) {
+    margin: 70px 0 0 0;
+}
+#introduction .container div:nth-child(1) div:nth-child(2) .img {
+    position: relative;
+}
+#form .container {
+    width: 90%;
+    margin: 120px auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+#form h1 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#form form {
+    margin: 30px auto;
+}
+#form form div:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#form form div:nth-child(1) img {
+    position: absolute;
+    right: 5px;
+    width: 10px;
+    height: 6px;
+    top: 45px;
+}
+#form form input {
+    padding: 0 0 5px 10px;
+    border: 0;
+    color: #2E344B;
+    border-bottom: 1px solid #2E344B;
+    outline: 0;
+    opacity: 0.5;
+    font-family: Montserrat;
+    width: 100%;
+    margin: 40px 0 0 0;
+}
+#form form #capture input {
+    outline: auto;
+    height: 65px;
+    max-width: 270px;
+    font-size: 1.5em;
+    padding: 0 0 0 20px;
+    margin: 20px 0 0 0;
+}
+#form form #capture div p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+#form form button {
+    margin: 80px 0 0 0;
+    width: 100%;
+    height: 70px;
+    border: 0;
+    color: #fff;
+    background: #EB5829;
+    font-family: RFDewiExpanded;
+    cursor: pointer;
+}
+#form form button:hover {
+    transition: 0.4s;
+    background: #ff6b3a;
+}
+footer {
+    background: #0B3164;
+    padding: 70px 0;
+    margin: 850px 0 0 0;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+}
+footer .container div:nth-child(1) .logoText {
+    display: flex;
+}
+footer .container div:nth-child(1) .logoText img {
+    width: 90px;
+    height: 80px;
+}
+footer .container div:nth-child(1) .logoText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 0 0 0 30px;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.8em;
+}
+footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 15px;
+}
+footer .container div:nth-child(1) .links {
+    margin: 40px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .container div:nth-child(1) .links ul li {
+    margin: 20px 0 0 0;
+}
+footer .container div:nth-child(1) .links ul li a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    font-family: Montserrat;
+}
+footer .container div:nth-child(1) .links > div div a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 20px 0 0 0;
+    opacity: 0.5;
+}
+footer .container div:nth-child(1) .links > div div a:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+footer .container div .links > div {
+    margin: 70px 0 0 0;
+}
+footer .container div .links > div div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container div .links > div div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+#introduction .instructionWrap {
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+}
+#introduction .instructionWrap div {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+}
+#introduction .instructionWrap div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#introduction .instructionWrap div:nth-child(1) p {
+    width: 213px;
+    left: 371px;
+    top: 1034px;
+    font-family: 'RFDewiExpanded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: #2E344B;
+}
+#introduction .instructionWrap div:nth-child(1) img {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#introduction .instructionWrap div:nth-child(2) {
+    background: #fff;
+}
+#introduction .instructionWrap div:nth-child(2) p {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'RFDewiExpanded';
+    opacity: 0.8;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: normal;
+}
+#introduction .instructionWrap div:nth-child(2) img {
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+#introduction .instructionWrap div:nth-child(2) span {
+    width: 30px;
+    position: absolute;
+    top: 105px;
+    left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 22px;
+    color: #2E344B;
+}
+#introduction .instructionWrap div:nth-child(3) {
+    background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main4.png') no-repeat center/cover;
+}
+#introduction .instructionWrap div:nth-child(3) p {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    background: linear-gradient(269.96deg, #fff 0.05%, #fff 47.93%, #fff 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'RFDewiExpanded';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: normal;
+}
+#introduction .instructionWrap div:nth-child(3) span {
+    width: 80%;
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 22px;
+    color: #fff;
+}
+#introduction .instructionWrap div:nth-child(3) span span {
+    font-size: 0.75em;
+    width: 100px;
+    left: 0;
+    font-style: italic;
+    text-decoration: underline;
+    top: 44px;
+}
+#introduction .instructionWrap div:nth-child(4) {
+    background: #fff;
+}
+#introduction .instructionWrap div:nth-child(4) p {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'RFDewiExpanded';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: normal;
+    opacity: 0.8;
+}
+#introduction .instructionWrap div:nth-child(4) img {
+    width: 70px;
+    height: 95px;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+#introduction .instructionWrap div:nth-child(4) span {
+    width: 80%;
+    position: absolute;
+    top: 105px;
+    left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 22px;
+    color: #2E344B;
+}
+#introduction .instructionWrap div:nth-child(5) {
+    background: linear-gradient(to top, rgba(29, 93, 181, 0.7), rgba(29, 93, 181, 0.7)), url('../assets/img/main6.png') no-repeat center/cover;
+}
+#introduction .instructionWrap div:nth-child(5) p {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    background: linear-gradient(269.96deg, #fff 0.05%, #fff 47.93%, #fff 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'RFDewiExpanded';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: normal;
+    width: auto;
+}
+#introduction .instructionWrap div:nth-child(5) span {
+    width: 30px;
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 22px;
+    color: #fff;
+}
+#introduction .instructionWrap div:nth-child(5) span span {
+    font-size: 0.75em;
+    width: 100px;
+    left: 0;
+    font-style: italic;
+    text-decoration: underline;
+    top: 44px;
+}
+
+
+@media (min-width: 280px) {
+    #auth div p:nth-child(3) {
+        font-size: 0.7em;
+        margin: 40px 0 0 0;
+    }
+    #auth div button {
+        width: 155px;
+        border: 0;
+        background: #EB5829;
+        color: #fff;
+        height: 30px;
+        margin: 220px 0 0 0;
+        cursor: pointer;
+        font-family: RFDewiExpanded;
+        font-size: 0.5em;
+        position: absolute;
+    }
+    #auth div button:hover {
+        transition: 0.4s;
+        background: #f36738;
+    }
+    #auth div .rememberForget {
+        position: absolute;
+        margin: 300px 0 0 0;
+        flex-direction: row;
+        font-size: 0.8em;
+        justify-content: space-between;
+        width: 65%;
+    }
+    #auth div .rememberForget div {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+    }
+    #auth div .rememberForget div input {
+        width: 14px;
+        height: 14px;
+    }
+    #auth div .rememberForget div label {
+        padding: 3px 0 0 5px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+    #auth div .rememberForget a {
+        padding: 7px 0 0 0;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+    }
+    #introduction .img {
+        background: url('../assets/img_application/sale-application-rigt-img.svg') center/contain no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    #form form div:nth-child(1) #company {
+        width: 70%;
+    }
+    #form form div:nth-child(1) #ooo {
+        width: 25%;
+    }
+    #form form #capture div {
+        display: flex;
+        flex-direction: column;
+    }
+    #form form #capture {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0 0 0;
+    }
+    #form form #capture div div {
+        width: 233px;
+        height: 51px;
+        background: #C4C4C4;
+        opacity: 0.3;
+        border-radius: 6px;
+    }
+    #form form #capture div p {
+        text-align: center;
+        padding: 0 0 12px 0;
+    }
+}
+
+
+@media (min-width: 375px) {
+    #auth div p:nth-child(3) {
+        font-size: 1em;
+        margin: 0;
+    }
+    #auth div .rememberForget {
+        width: 58%;
+    }   
+    #form form div:nth-child(1) img {
+        right: 20px;
+    }
+}
+
+
+@media (min-width: 390px) {
+    #auth div img:nth-child(2) {
+        top: 16px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (min-width: 412px) {
+    #auth div p:nth-child(3) {
+        font-size: 1.2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 45%;
+    }
+    #auth div input:nth-child(5) {
+        margin: 160px 0 0 0;
+        width: 45%;
+    }
+    #auth div button {
+        margin: 250px 0 0 0;
+        height: 40px;
+        width: 45%;
+    }
+    #auth div .rememberForget {
+        margin: 350px 0 0 0;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 55px;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 540px) {
+    #auth div p:nth-child(3) {
+        font-size: 1.4em;
+        margin: -50px 0 0 0;
+    }
+    #auth div .rememberForget {
+        width: 50%;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 75px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #auth div img {
+        width: 400px;
+        height: 450px;
+    }
+    #auth div img:nth-child(2) {
+        top: 18px;
+        left: 240px;
+        width: 120px;
+        height: 120px;
+    }
+    #auth div input:nth-child(4) {
+        width: 30%;
+    }
+    #auth div input:nth-child(5) {
+        width: 30%;
+        margin: 170px 0 0 0;
+    }
+    #auth div button {
+        width: 30%;
+        margin: 300px 0 0 0;
+    }
+    #auth div .rememberForget {
+        margin: 420px 0 0 0;
+        width: 33%;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 150px;
+    }
+}
+
+
+@media (min-width: 820px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 280px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 170px;
+    }
+}
+
+
+@media (min-width: 912px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 320px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) {
+        padding: 0 200px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #auth div img {
+        width: 450px;
+        height: 500px;
+        margin: 70px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 1.8em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        height: 60px;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 24%;
+        font-size: 1em;
+    }
+    #auth div .rememberForget div input {
+        width: 20px;
+        height: 20px;
+    }
+    nav {
+        height: 70px;
+        position: static;
+        padding: 0;
+        display: block;
+    }
+    nav .container {
+        width: 1000px;
+        height: 100%;
+    }
+    nav .container ul {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    nav .container ul li {
+        position: relative;
+        margin: 0;
+        height: 100%;
+        display: block;
+    }
+    nav .container ul li a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #1D5DB5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    nav .container ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    nav .container ul li div {
+        height: 100%;
+      }
+      nav .container ul li div div {
+        display: none;
+      }
+    #introduction .container div:nth-child(1) > div:nth-child(1) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #introduction .container div:nth-child(1) > div:nth-child(1) button {
+        width: 300px;
+    }
+    #introduction .img {
+        width: 500px;
+        height: 500px;
+    }
+    #introduction .container div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+    }
+    #introduction .container h1 {
+        line-height: 70px;
+        font-size: 3em;
+        text-align: left;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(2) {
+        margin: 0;
+    }
+    #introduction {
+        min-height: 668px;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 210px 0;
+    }
+    #introduction .container p {
+        text-align: left;
+        width: 390px;
+    }
+    #introduction .container {
+        width: 1000px;
+    }   
+    #form .container {
+        width: 1000px;
+    }
+    #form h1 {
+        font-size: 3.5em;
+        font-family: RFDewiExpanded;
+    }
+    #form form input {
+        padding: 0 0 8px 10px;
+        margin: 50px 0 0 0;
+    }
+    #form form div:nth-child(1) {
+        width: 520px;
+    }
+    #form form div:nth-child(1) #company {
+        width: 80%;
+    }
+    #form form div:nth-child(1) #ooo {
+        width: 15%;
+    }
+    #form form div:nth-child(1) img {
+        top: 55px;
+    }
+    #form form #capture {
+        flex-direction: row;
+        width: 550px;
+    }
+    #form form #capture div p {
+        width: 230px;
+    }
+    #form form #capture input {
+        margin: 15px 0 0 0;
+    }
+    footer .container {
+        width: 1000px;
+    }
+    footer .container div {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container div:nth-child(1) .links {
+        margin: 0;
+        flex-direction: column;
+        width: 600px;
+        margin: -10px 0 0 0;
+    }
+    footer .container div:nth-child(1) .links > div div {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container div:nth-child(1) .links > div div a {
+        margin: 15px 0 0 0;
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links > div {
+       padding: 0 15px 20px 15px;
+       justify-content: center;
+    }
+    footer .container div:nth-child(1) .links ul li a {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.7em;
+        line-height: 18px;
+    }
+    footer .container div:nth-child(1) .logoText img {
+        width: 130px;
+        height: 130px;
+    }
+    footer .container div:nth-child(1) .logoText div {
+        justify-content: space-around;
+        padding: 0 0 0 10px;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    footer .container div .links > div {
+        margin: 0;
+    }
+    #introduction .instructionWrap {
+        min-height: 170px;
+        flex-direction: row;
+        margin: 0;
+    }
+    #introduction .instructionWrap div {
+        width: 250px;
+        height: 170px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 20px;
+        left: 515px;
+    }
+    #auth div p:nth-child(3) {
+        font-size: 2em;
+    }
+    #auth div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+    #auth div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+    #auth div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        font-size: 1em;
+    }
+    #auth div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 25%;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1680px) {
+    #auth div img {
+        width: 600px;
+        height: 680px;
+        margin: 130px 0 0 0;
+    }
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 795px;
+        width: 200px;
+        height: 200px;
+    }
+    #auth div input:nth-child(5) {
+        margin: 220px 0 0 0;
+    }
+    #auth div button {
+        margin: 380px 0 0 0;
+        height: 80px;
+    }
+    #auth div .rememberForget {
+        margin: 580px 0 0 0;
+        width: 24%;
+    }
+    nav .container {
+        width: 1200px;
+    }
+    #introduction .container {
+        width: 1200px;
+    }
+    #introduction .container h1 {
+        font-size: 4em;
+    }
+    #introduction .container div:nth-child(1) div:nth-child(1) button {
+        margin: 0 0 190px 0
+    }
+    #introduction .img {
+        width: 550px;
+        height: 550px;
+    }
+    #introduction {
+        min-height: 730px;
+    }
+    #form .container {
+        width: 1200px;
+    }
+    footer .container {
+        width: 1200px;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(1) {
+        font-size: 0.9em;
+    }
+    footer .container div:nth-child(1) .logoText div p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    footer .container div:nth-child(1) .links {
+        width: 700px;
+    }
+    footer .container div:nth-child(1) .logoText {
+        width: 400px;
+    }
+    footer .container div:nth-child(1) .links > div {
+        padding: 0 26px 20px 26px;
+    }
+    #introduction .instructionWrap div {
+        min-height: 190px;
+    }
+}
+
+@media (min-width: 280px) {
+    #auth div img:nth-child(2) {
+        height: auto;
+        transform: rotate(12deg);
+        top: 18px;
+    }
+}
+
+@media (min-width: 412px) {
+    #auth div img:nth-child(2) {
+        top: 25px;
+    }
+}
+
+@media (min-width: 540px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 130px;
+        width: 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 240px;
+    }
+}
+
+@media (min-width: 820px) {
+    #auth div img:nth-child(2) {
+        left: 260px;
+    }
+}
+
+@media (min-width: 912px) {
+    #auth div img:nth-child(2) {
+        top: 24px;
+        left: 290px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #auth div img:nth-child(2) {
+        top: 26px;
+        left: 320px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 450px;
+    }
+}
+
+@media (min-width: 1366px) {
+    #auth div img:nth-child(2) {
+        top: 28px;
+        left: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #auth div img:nth-child(2) {
+        top: 32px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #auth div img:nth-child(2) {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #auth div img:nth-child(2) {
+        left: 620px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #auth div img:nth-child(2) {
+        top: 36px;
+        left: 760px;
+        width: 180px;
+    }
+}
