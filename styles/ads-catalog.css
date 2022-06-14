@@ -28,6 +28,19 @@ body {
     font-size: 25px!important;
     line-height: 40px!important;
 }
+
+.container-search-wrap {
+  height: 150px;
+}
+.container-search-wrap input {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #1D5DB5;
+  padding: 0 0 0 50px;
+}
+.container-search-wrap .add-product {
+  height: 80px;
+}
 .application-catalog-sort {
     margin-top: 50px;
     width: 100%;
@@ -653,6 +666,11 @@ nav {
   
     header .btnWrap button:nth-child(2) {
       width: 225px;
+    }
+    .container-search-wrap input {
+      width: 100%;
+      border: 1px solid #1D5DB5;
+      padding: 0 0 0 100px;
     }
   }
   

@@ -6,8 +6,7 @@
 @font-face {
     font-family: RFDewiExpanded;
     font-display: swap;
-    src: url("../assets/fonts/RFDewiExpanded-Regular"),
-    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    src: url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
     url("../assets/fonts/RFDewiExpanded-Regular.woff");
 }
 
